@@ -1,0 +1,10 @@
+{
+  "id": 5,
+  "type": "invoice",
+  "length": 537,
+  "complexity": "complex",
+  "language": "en",
+  "expected_entities": 7,
+  "created_at": "2025-10-31T19:36:16.947670",
+  "quality": "low"
+}

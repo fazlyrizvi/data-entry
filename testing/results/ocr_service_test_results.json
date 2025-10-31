@@ -1,0 +1,122 @@
+{
+  "test_suite": "OCR Service",
+  "start_time": "2025-10-31T19:34:00.814411",
+  "tests": [
+    {
+      "test_name": "Basic OCR Functionality",
+      "status": "PASSED",
+      "message": "Basic components initialized successfully",
+      "duration": 0.39345884323120117,
+      "timestamp": "2025-10-31T19:34:01.207932",
+      "details": {
+        "config_loaded": true,
+        "preprocessor_ready": true
+      }
+    },
+    {
+      "test_name": "Supported Format Detection",
+      "status": "PASSED",
+      "message": "All formats detected correctly",
+      "duration": 1.9311904907226562e-05,
+      "timestamp": "2025-10-31T19:34:01.208242",
+      "details": {
+        "image_formats": 6,
+        "pdf_formats": 1,
+        "spreadsheet_formats": 4
+      }
+    },
+    {
+      "test_name": "Image Preprocessing",
+      "status": "FAILED",
+      "message": "Preprocessing test failed: 2 != 3",
+      "duration": 0.04653334617614746,
+      "timestamp": "2025-10-31T19:34:01.254875",
+      "details": {
+        "error": "2 != 3"
+      }
+    },
+    {
+      "test_name": "Single File OCR Processing",
+      "status": "FAILED",
+      "message": "Single file processing failed: No module named 'pytesseract'",
+      "duration": 0.02385687828063965,
+      "timestamp": "2025-10-31T19:34:01.279039",
+      "details": {
+        "error": "No module named 'pytesseract'"
+      }
+    },
+    {
+      "test_name": "Multiple Document Formats",
+      "status": "FAILED",
+      "message": "Multiple format test failed: No module named 'pytesseract'",
+      "duration": 0.0037734508514404297,
+      "timestamp": "2025-10-31T19:34:01.283044",
+      "details": {
+        "error": "No module named 'pytesseract'"
+      }
+    },
+    {
+      "test_name": "Confidence Scoring",
+      "status": "FAILED",
+      "message": "Confidence scoring test failed: np.float64(nan) != 0",
+      "duration": 0.0008091926574707031,
+      "timestamp": "2025-10-31T19:34:01.284037",
+      "details": {
+        "error": "np.float64(nan) != 0"
+      }
+    },
+    {
+      "test_name": "Error Handling",
+      "status": "FAILED",
+      "message": "Error handling test failed: No module named 'pytesseract'",
+      "duration": 0.0015671253204345703,
+      "timestamp": "2025-10-31T19:34:01.285737",
+      "details": {
+        "error": "No module named 'pytesseract'"
+      }
+    },
+    {
+      "test_name": "Performance Benchmark",
+      "status": "FAILED",
+      "message": "Performance benchmark failed: No module named 'pytesseract'",
+      "duration": 0.0008523464202880859,
+      "timestamp": "2025-10-31T19:34:01.286729",
+      "details": {
+        "error": "No module named 'pytesseract'"
+      }
+    }
+  ],
+  "summary": {
+    "total": 8,
+    "passed": 2,
+    "failed": 6,
+    "errors": [
+      {
+        "test": "Image Preprocessing",
+        "error": "Preprocessing test failed: 2 != 3"
+      },
+      {
+        "test": "Single File OCR Processing",
+        "error": "Single file processing failed: No module named 'pytesseract'"
+      },
+      {
+        "test": "Multiple Document Formats",
+        "error": "Multiple format test failed: No module named 'pytesseract'"
+      },
+      {
+        "test": "Confidence Scoring",
+        "error": "Confidence scoring test failed: np.float64(nan) != 0"
+      },
+      {
+        "test": "Error Handling",
+        "error": "Error handling test failed: No module named 'pytesseract'"
+      },
+      {
+        "test": "Performance Benchmark",
+        "error": "Performance benchmark failed: No module named 'pytesseract'"
+      }
+    ]
+  },
+  "end_time": "2025-10-31T19:34:01.286845",
+  "duration": 0.472434
+}

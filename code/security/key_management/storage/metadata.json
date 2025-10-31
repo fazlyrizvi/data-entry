@@ -1,0 +1,23 @@
+{
+  "api_token_1761909764_4oW6FzriKDo=_v1": {
+    "key_id": "api_token_1761909764_4oW6FzriKDo=_v1",
+    "key_type": "api_token",
+    "scope": "read,write",
+    "algorithm": "token",
+    "key_length": 256,
+    "created_at": 1761909764.0273523,
+    "last_used": 1761909764.0624077,
+    "expires_at": 1761913364.0273187,
+    "is_active": false,
+    "usage_count": 1,
+    "metadata": {
+      "generator_version": "1.0",
+      "hsm_enabled": false,
+      "entropy_source": "system",
+      "test": true
+    },
+    "rotation_history": null,
+    "revoked_at": 1761909764.0730205,
+    "revocation_reason": "test_revocation"
+  }
+}

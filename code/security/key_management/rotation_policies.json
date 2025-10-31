@@ -1,0 +1,53 @@
+{
+  "last_updated": 1761909835.2518106,
+  "policies": [
+    {
+      "policy_id": "test_policy",
+      "name": "Test Policy",
+      "key_type": "api_token",
+      "scope": "admin",
+      "frequency": "daily",
+      "strategy": "immediate",
+      "advance_notice_hours": 24,
+      "overlap_duration_hours": 48,
+      "custom_cron": null,
+      "conditions": null,
+      "enabled": true,
+      "created_at": 1761909798.4415865,
+      "last_rotated": null,
+      "next_rotation": 1761996198.4415874
+    },
+    {
+      "policy_id": "high_security_weekly",
+      "name": "High Security Weekly Rotation",
+      "key_type": "api_token",
+      "scope": "admin",
+      "frequency": "weekly",
+      "strategy": "overlapping",
+      "advance_notice_hours": 24,
+      "overlap_duration_hours": 48,
+      "custom_cron": null,
+      "conditions": null,
+      "enabled": true,
+      "created_at": 1761909835.243186,
+      "last_rotated": null,
+      "next_rotation": 1762514635.243187
+    },
+    {
+      "policy_id": "standard_monthly",
+      "name": "Standard Monthly Rotation",
+      "key_type": "api_token",
+      "scope": "read,write",
+      "frequency": "monthly",
+      "strategy": "gradual",
+      "advance_notice_hours": 48,
+      "overlap_duration_hours": 72,
+      "custom_cron": null,
+      "conditions": null,
+      "enabled": true,
+      "created_at": 1761909835.2517993,
+      "last_rotated": null,
+      "next_rotation": 1764501835.2518003
+    }
+  ]
+}

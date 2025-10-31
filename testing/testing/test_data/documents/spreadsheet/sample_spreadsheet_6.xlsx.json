@@ -1,0 +1,15 @@
+{
+  "id": 6,
+  "type": "spreadsheet",
+  "filename": "sample_spreadsheet_6.xlsx",
+  "size": 7366396,
+  "rows": 1877,
+  "columns": 30,
+  "has_formulas": true,
+  "format": "csv",
+  "quality": "high",
+  "language": "en",
+  "complexity": "simple",
+  "created_at": "2025-06-25T19:36:16.020897",
+  "actual_file": "testing/test_data/documents/spreadsheet/sample_spreadsheet_6.xlsx"
+}

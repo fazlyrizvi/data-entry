@@ -1,0 +1,16 @@
+{
+  "id": 36,
+  "type": "image",
+  "filename": "sample_image_36.png",
+  "size": 206438,
+  "width": 1024,
+  "height": 768,
+  "dpi": 150,
+  "quality": "medium",
+  "format": "jpg",
+  "has_noise": false,
+  "has_skew": true,
+  "complexity": "complex",
+  "language": "en",
+  "created_at": "2025-10-31T19:36:16.440312"
+}

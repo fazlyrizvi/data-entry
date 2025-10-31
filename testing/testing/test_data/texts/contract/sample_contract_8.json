@@ -1,0 +1,10 @@
+{
+  "id": 8,
+  "type": "contract",
+  "length": 703,
+  "complexity": "simple",
+  "language": "en",
+  "expected_entities": 7,
+  "created_at": "2025-10-31T19:36:17.278644",
+  "quality": "medium"
+}

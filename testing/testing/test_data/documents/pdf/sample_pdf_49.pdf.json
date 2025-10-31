@@ -1,0 +1,14 @@
+{
+  "id": 49,
+  "type": "pdf",
+  "filename": "sample_pdf_49.pdf",
+  "size": 669615,
+  "pages": 8,
+  "has_images": true,
+  "text_density": "medium",
+  "quality": "high",
+  "language": "en",
+  "complexity": "complex",
+  "created_at": "2024-12-08T19:36:15.976989",
+  "actual_file": "testing/test_data/documents/pdf/sample_pdf_49.pdf"
+}

@@ -1,0 +1,16 @@
+{
+  "id": 29,
+  "type": "image",
+  "filename": "sample_image_29.tiff",
+  "size": 699840,
+  "width": 1920,
+  "height": 1080,
+  "dpi": 300,
+  "quality": "high",
+  "format": "png",
+  "has_noise": false,
+  "has_skew": false,
+  "complexity": "medium",
+  "language": "en",
+  "created_at": "2025-10-31T19:36:16.391789"
+}

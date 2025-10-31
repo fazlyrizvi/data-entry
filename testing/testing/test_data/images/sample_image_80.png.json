@@ -1,0 +1,16 @@
+{
+  "id": 80,
+  "type": "image",
+  "filename": "sample_image_80.png",
+  "size": 206438,
+  "width": 1024,
+  "height": 768,
+  "dpi": 150,
+  "quality": "medium",
+  "format": "png",
+  "has_noise": false,
+  "has_skew": true,
+  "complexity": "simple",
+  "language": "en",
+  "created_at": "2025-10-31T19:36:16.750728"
+}

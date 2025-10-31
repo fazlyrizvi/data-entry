@@ -1,0 +1,138 @@
+{
+  "test_suite": "Error Prediction System",
+  "start_time": "2025-10-31T19:35:16.978977",
+  "tests": [
+    {
+      "test_name": "Component Imports",
+      "status": "PASSED",
+      "message": "All components imported and initialized",
+      "duration": 2.459743022918701,
+      "timestamp": "2025-10-31T19:35:19.438778",
+      "details": {
+        "config_loaded": true,
+        "predictor_ready": true,
+        "document_characteristics_created": true
+      }
+    },
+    {
+      "test_name": "Prediction Functionality",
+      "status": "PASSED",
+      "message": "Prediction functionality working",
+      "duration": 1.0091736316680908,
+      "timestamp": "2025-10-31T19:35:20.448198",
+      "details": {
+        "model_trained": false,
+        "predictions_made": 2,
+        "low_risk_probability": 0.005,
+        "high_risk_probability": 0.7250000000000001,
+        "error_types_detected": 2
+      }
+    },
+    {
+      "test_name": "Notification System",
+      "status": "PASSED",
+      "message": "Notification system working",
+      "duration": 0.023632049560546875,
+      "timestamp": "2025-10-31T19:35:20.472365",
+      "details": {
+        "notifier_initialized": true,
+        "rule_added": true,
+        "statistics_available": true,
+        "health_status_available": true
+      }
+    },
+    {
+      "test_name": "Workflow Engine",
+      "status": "FAILED",
+      "message": "Workflow engine failed: cannot import name 'WorkflowStep' from 'recovery' (/workspace/code/error_prediction/recovery.py)",
+      "duration": 1.2159347534179688e-05,
+      "timestamp": "2025-10-31T19:35:20.473033",
+      "details": {
+        "error": "cannot import name 'WorkflowStep' from 'recovery' (/workspace/code/error_prediction/recovery.py)"
+      }
+    },
+    {
+      "test_name": "Resilience Manager",
+      "status": "FAILED",
+      "message": "Resilience manager failed: name 'WorkflowEngine' is not defined",
+      "duration": 4.0531158447265625e-06,
+      "timestamp": "2025-10-31T19:35:20.473325",
+      "details": {
+        "error": "name 'WorkflowEngine' is not defined"
+      }
+    },
+    {
+      "test_name": "System Integration",
+      "status": "PASSED",
+      "message": "System integration working",
+      "duration": 0.07297277450561523,
+      "timestamp": "2025-10-31T19:35:20.546365",
+      "details": {
+        "health_status_available": true,
+        "stats_available": true,
+        "prediction_made": true,
+        "dashboard_data_available": true,
+        "error_probability": 0.025
+      }
+    },
+    {
+      "test_name": "Synthetic Training Data",
+      "status": "FAILED",
+      "message": "Synthetic training data failed: 'document_characteristics' not found in (DocumentCharacteristics(file_size=44872151.152863026, file_type=np.str_('txt'), page_count=7, text_density=0.200204935223102, image_count=3, image_quality_score=0.8852840640881197, language=np.str_('en'), processing_time=28.106629131810358, confidence_score=0.5537612174969079, document_complexity=0.6840395894548008, time_of_day=21, day_of_week=1, historical_failure_rate=0.0018882920454116872), <ErrorType.CORRUPTED_DATA: 'corrupted_data'>, <SeverityLevel.MEDIUM: 'medium'>)",
+      "duration": 0.0009548664093017578,
+      "timestamp": "2025-10-31T19:35:20.547420",
+      "details": {
+        "error": "'document_characteristics' not found in (DocumentCharacteristics(file_size=44872151.152863026, file_type=np.str_('txt'), page_count=7, text_density=0.200204935223102, image_count=3, image_quality_score=0.8852840640881197, language=np.str_('en'), processing_time=28.106629131810358, confidence_score=0.5537612174969079, document_complexity=0.6840395894548008, time_of_day=21, day_of_week=1, historical_failure_rate=0.0018882920454116872), <ErrorType.CORRUPTED_DATA: 'corrupted_data'>, <SeverityLevel.MEDIUM: 'medium'>)"
+      }
+    },
+    {
+      "test_name": "Performance Benchmark",
+      "status": "PASSED",
+      "message": "Performance benchmark passed",
+      "duration": 0.0022814273834228516,
+      "timestamp": "2025-10-31T19:35:20.549826",
+      "details": {
+        "documents_processed": 100,
+        "predictions_made": 100,
+        "avg_prediction_time": 1.7271041870117187e-05,
+        "max_prediction_time": 4.1961669921875e-05,
+        "min_prediction_time": 1.5020370483398438e-05,
+        "high_risk_predictions": 11,
+        "predictions_per_second": 43823.04879322955
+      }
+    },
+    {
+      "test_name": "Error Scenarios",
+      "status": "PASSED",
+      "message": "Error scenarios handled",
+      "duration": 0.0007481575012207031,
+      "timestamp": "2025-10-31T19:35:20.550668",
+      "details": {
+        "invalid_chars_handled": false,
+        "extreme_values_handled": true,
+        "missing_config_handled": true
+      }
+    }
+  ],
+  "summary": {
+    "total": 9,
+    "passed": 6,
+    "failed": 3,
+    "errors": [
+      {
+        "test": "Workflow Engine",
+        "error": "Workflow engine failed: cannot import name 'WorkflowStep' from 'recovery' (/workspace/code/error_prediction/recovery.py)"
+      },
+      {
+        "test": "Resilience Manager",
+        "error": "Resilience manager failed: name 'WorkflowEngine' is not defined"
+      },
+      {
+        "test": "Synthetic Training Data",
+        "error": "Synthetic training data failed: 'document_characteristics' not found in (DocumentCharacteristics(file_size=44872151.152863026, file_type=np.str_('txt'), page_count=7, text_density=0.200204935223102, image_count=3, image_quality_score=0.8852840640881197, language=np.str_('en'), processing_time=28.106629131810358, confidence_score=0.5537612174969079, document_complexity=0.6840395894548008, time_of_day=21, day_of_week=1, historical_failure_rate=0.0018882920454116872), <ErrorType.CORRUPTED_DATA: 'corrupted_data'>, <SeverityLevel.MEDIUM: 'medium'>)"
+      }
+    ]
+  },
+  "end_time": "2025-10-31T19:35:20.550728",
+  "duration": 3.571751
+}

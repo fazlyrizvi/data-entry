@@ -1,0 +1,14 @@
+{
+  "id": 15,
+  "type": "pdf",
+  "filename": "sample_pdf_15.pdf",
+  "size": 789494,
+  "pages": 9,
+  "has_images": false,
+  "text_density": "high",
+  "quality": "low",
+  "language": "en",
+  "complexity": "medium",
+  "created_at": "2025-02-23T19:36:15.728100",
+  "actual_file": "testing/test_data/documents/pdf/sample_pdf_15.pdf"
+}

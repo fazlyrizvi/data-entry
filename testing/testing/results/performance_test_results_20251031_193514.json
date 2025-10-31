@@ -1,0 +1,105 @@
+{
+  "test_configuration": {
+    "test_scenarios": {
+      "smoke_test": {
+        "documents": 50,
+        "description": "Quick smoke test for basic functionality"
+      },
+      "small_batch": {
+        "documents": 200,
+        "description": "Small batch test for performance validation"
+      },
+      "medium_batch": {
+        "documents": 500,
+        "description": "Medium batch test for load testing"
+      },
+      "large_batch": {
+        "documents": 1000,
+        "description": "Large batch test for throughput measurement"
+      },
+      "stress_test": {
+        "documents": 2000,
+        "description": "Stress test for system limits"
+      },
+      "endurance_test": {
+        "documents": 5000,
+        "description": "Endurance test for stability"
+      }
+    },
+    "test_parameters": {
+      "resource_monitoring_interval": 1,
+      "timeout_per_test": 3600,
+      "parallel_workers": [
+        1,
+        2,
+        4,
+        8,
+        16
+      ],
+      "ocr_languages": [
+        "eng"
+      ],
+      "nlp_tasks": [
+        "entities",
+        "classification",
+        "form_fields"
+      ],
+      "document_types": [
+        "image",
+        "pdf",
+        "spreadsheet"
+      ],
+      "document_qualities": [
+        "high",
+        "medium",
+        "low"
+      ],
+      "test_iterations": 3,
+      "confidence_threshold": 0.8
+    },
+    "output": {
+      "results_dir": "testing/results",
+      "benchmarks_dir": "testing/benchmarks",
+      "report_file": "testing/performance_testing_report.md",
+      "save_raw_data": true,
+      "generate_charts": true,
+      "export_formats": [
+        "json",
+        "csv",
+        "md"
+      ]
+    },
+    "performance_targets": {
+      "ocr": {
+        "max_processing_time_per_document": 5.0,
+        "min_success_rate": 0.85,
+        "min_throughput": 2.0
+      },
+      "nlp": {
+        "max_processing_time_per_document": 0.5,
+        "min_success_rate": 0.9,
+        "min_throughput": 10.0
+      },
+      "parallel": {
+        "min_efficiency": 0.6,
+        "max_processing_time": 300.0,
+        "min_throughput": 5.0
+      }
+    },
+    "stress_testing": {
+      "max_concurrent_documents": 10000,
+      "memory_limit_mb": 8192,
+      "cpu_limit_percent": 90,
+      "test_duration_minutes": 60
+    },
+    "monitoring": {
+      "enable_detailed_logging": true,
+      "log_level": "INFO",
+      "enable_performance_profiling": true,
+      "collect_system_metrics": true,
+      "alert_on_thresholds": true
+    }
+  },
+  "test_duration": "0:00:00.008775",
+  "results": {}
+}

@@ -1,0 +1,13 @@
+
+            From: Jane Doe
+            To: Alice Brown
+            Subject: Project Status
+            Date: 2024-11-01
+            
+            Dear Bob Johnson,
+            
+            I hope this message finds you well. Please review the attached information and let me know if you have any questions.
+            
+            Best regards,
+            Jane Doe
+            

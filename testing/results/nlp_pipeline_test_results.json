@@ -1,0 +1,141 @@
+{
+  "test_suite": "NLP Pipeline",
+  "start_time": "2025-10-31T19:34:06.337797",
+  "tests": [
+    {
+      "test_name": "Component Imports",
+      "status": "FAILED",
+      "message": "Component import failed: No module named 'spacy'",
+      "duration": 0.03587651252746582,
+      "timestamp": "2025-10-31T19:34:06.373731",
+      "details": {
+        "error": "No module named 'spacy'"
+      }
+    },
+    {
+      "test_name": "Entity Extraction",
+      "status": "FAILED",
+      "message": "Entity extraction failed: No module named 'spacy'",
+      "duration": 0.0039014816284179688,
+      "timestamp": "2025-10-31T19:34:06.377873",
+      "details": {
+        "error": "No module named 'spacy'"
+      }
+    },
+    {
+      "test_name": "Multilingual Support",
+      "status": "FAILED",
+      "message": "Multilingual test failed: No module named 'spacy'",
+      "duration": 0.0013387203216552734,
+      "timestamp": "2025-10-31T19:34:06.379350",
+      "details": {
+        "error": "No module named 'spacy'"
+      }
+    },
+    {
+      "test_name": "Text Classification",
+      "status": "FAILED",
+      "message": "Classification test failed: No module named 'torch'",
+      "duration": 0.02118659019470215,
+      "timestamp": "2025-10-31T19:34:06.400651",
+      "details": {
+        "error": "No module named 'torch'"
+      }
+    },
+    {
+      "test_name": "Form Field Extraction",
+      "status": "FAILED",
+      "message": "Form field extraction failed: No module named 'spacy'",
+      "duration": 0.001607656478881836,
+      "timestamp": "2025-10-31T19:34:06.402444",
+      "details": {
+        "error": "No module named 'spacy'"
+      }
+    },
+    {
+      "test_name": "Custom Patterns",
+      "status": "FAILED",
+      "message": "Custom pattern test failed: No module named 'spacy'",
+      "duration": 0.0010769367218017578,
+      "timestamp": "2025-10-31T19:34:06.403644",
+      "details": {
+        "error": "No module named 'spacy'"
+      }
+    },
+    {
+      "test_name": "Batch Processing",
+      "status": "FAILED",
+      "message": "Batch processing failed: No module named 'spacy'",
+      "duration": 0.0008018016815185547,
+      "timestamp": "2025-10-31T19:34:06.404553",
+      "details": {
+        "error": "No module named 'spacy'"
+      }
+    },
+    {
+      "test_name": "Performance Test",
+      "status": "FAILED",
+      "message": "Performance test failed: No module named 'spacy'",
+      "duration": 0.0008740425109863281,
+      "timestamp": "2025-10-31T19:34:06.405523",
+      "details": {
+        "error": "No module named 'spacy'"
+      }
+    },
+    {
+      "test_name": "Error Handling",
+      "status": "FAILED",
+      "message": "Error handling test failed: No module named 'spacy'",
+      "duration": 0.001005411148071289,
+      "timestamp": "2025-10-31T19:34:06.406623",
+      "details": {
+        "error": "No module named 'spacy'"
+      }
+    }
+  ],
+  "summary": {
+    "total": 9,
+    "passed": 0,
+    "failed": 9,
+    "errors": [
+      {
+        "test": "Component Imports",
+        "error": "Component import failed: No module named 'spacy'"
+      },
+      {
+        "test": "Entity Extraction",
+        "error": "Entity extraction failed: No module named 'spacy'"
+      },
+      {
+        "test": "Multilingual Support",
+        "error": "Multilingual test failed: No module named 'spacy'"
+      },
+      {
+        "test": "Text Classification",
+        "error": "Classification test failed: No module named 'torch'"
+      },
+      {
+        "test": "Form Field Extraction",
+        "error": "Form field extraction failed: No module named 'spacy'"
+      },
+      {
+        "test": "Custom Patterns",
+        "error": "Custom pattern test failed: No module named 'spacy'"
+      },
+      {
+        "test": "Batch Processing",
+        "error": "Batch processing failed: No module named 'spacy'"
+      },
+      {
+        "test": "Performance Test",
+        "error": "Performance test failed: No module named 'spacy'"
+      },
+      {
+        "test": "Error Handling",
+        "error": "Error handling test failed: No module named 'spacy'"
+      }
+    ]
+  },
+  "end_time": "2025-10-31T19:34:06.406718",
+  "duration": 0.068921
+}

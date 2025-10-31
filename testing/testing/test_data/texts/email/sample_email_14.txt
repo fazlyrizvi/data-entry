@@ -1,0 +1,13 @@
+
+            From: Charlie Davis
+            To: Bob Johnson
+            Subject: Market Analysis
+            Date: 2025-01-28
+            
+            Dear Jane Doe,
+            
+            I hope this message finds you well. Please review the attached information and let me know if you have any questions.
+            
+            Best regards,
+            Charlie Davis
+            

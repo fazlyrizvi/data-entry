@@ -1,0 +1,10 @@
+{
+  "id": 5,
+  "type": "article",
+  "length": 1016,
+  "complexity": "complex",
+  "language": "en",
+  "expected_entities": 11,
+  "created_at": "2025-10-31T19:36:18.343898",
+  "quality": "medium"
+}

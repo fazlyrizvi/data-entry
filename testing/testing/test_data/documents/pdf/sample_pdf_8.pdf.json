@@ -1,0 +1,14 @@
+{
+  "id": 8,
+  "type": "pdf",
+  "filename": "sample_pdf_8.pdf",
+  "size": 1145265,
+  "pages": 12,
+  "has_images": true,
+  "text_density": "low",
+  "quality": "high",
+  "language": "en",
+  "complexity": "medium",
+  "created_at": "2024-12-02T19:36:15.683581",
+  "actual_file": "testing/test_data/documents/pdf/sample_pdf_8.pdf"
+}
