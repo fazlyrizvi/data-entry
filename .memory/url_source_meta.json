@@ -1,0 +1,191 @@
+{
+  "_source_id": 26,
+  "sources": {
+    "Security Frameworks for Enterprise Data Automation Systems": {
+      "https://workos.com/blog/oauth-and-jwt-how-to-use-and-best-practices": {
+        "id": 1,
+        "publisher": "WorkOS",
+        "url": "https://workos.com/blog/oauth-and-jwt-how-to-use-and-best-practices",
+        "title": "OAuth and JWT: How To Use Together + Best Practices",
+        "info": "Comprehensive OAuth 2.0 and JWT implementation guide for enterprise systems, including best practices, security considerations, SSO implementation, and specific guidance for combining OAuth with JWT for enterprise authentication."
+      },
+      "https://www.ibm.com/think/insights/api-security-best-practices": {
+        "id": 2,
+        "publisher": "IBM",
+        "url": "https://www.ibm.com/think/insights/api-security-best-practices",
+        "title": "API Security Best Practices",
+        "info": "Detailed API security best practices for enterprise APIs covering authentication, authorization, encryption, monitoring, rate limiting, and security testing approaches."
+      },
+      "https://medium.com/@RocketMeUpCybersecurity/role-based-access-control-rbac-in-enterprise-applications-a-how-to-guide-933321670df9": {
+        "id": 3,
+        "publisher": "Medium (RocketMeUpCybersecurity)",
+        "url": "https://medium.com/@RocketMeUpCybersecurity/role-based-access-control-rbac-in-enterprise-applications-a-how-to-guide-933321670df9",
+        "title": "Role-Based Access Control (RBAC) in Enterprise Applications",
+        "info": "Step-by-step RBAC implementation guide for enterprise applications including design patterns, security considerations, role hierarchies, and best practices for access control management."
+      },
+      "https://blog.dreamfactory.com/api-security-checklist-essential-controls-for-enterprise-apis": {
+        "id": 4,
+        "publisher": "DreamFactory",
+        "url": "https://blog.dreamfactory.com/api-security-checklist-essential-controls-for-enterprise-apis",
+        "title": "API Security Checklist: Essential Controls for Enterprise APIs",
+        "info": "API Security Checklist with essential controls for enterprise APIs covering authentication, data protection, threat detection, compliance, and centralized security management approaches."
+      },
+      "https://www.strongdm.com/rbac": {
+        "id": 5,
+        "publisher": "StrongDM",
+        "url": "https://www.strongdm.com/rbac",
+        "title": "The Definitive Guide to Role-Based Access Control (RBAC)",
+        "info": "Comprehensive RBAC guide covering model types, implementation strategies, management approaches, and comparative analysis with other access control mechanisms."
+      },
+      "https://www.legitsecurity.com/aspm-knowledge-base/api-key-security-best-practices": {
+        "id": 6,
+        "publisher": "Legit Security",
+        "url": "https://www.legitsecurity.com/aspm-knowledge-base/api-key-security-best-practices",
+        "title": "API Key Security Best Practices: Secure Sensitive Data",
+        "info": "10 API key security best practices including generation, storage, rotation, access restriction, monitoring, and audit practices for enterprise systems."
+      },
+      "https://frontegg.com/blog/data-encryption-what-it-is-how-it-works-and-best-practices": {
+        "id": 7,
+        "publisher": "Frontegg",
+        "url": "https://frontegg.com/blog/data-encryption-what-it-is-how-it-works-and-best-practices",
+        "title": "Data Encryption: What It Is, How It Works, and Best Practices",
+        "info": "Comprehensive data encryption guide covering algorithms, at-rest and in-transit encryption, key management, and enterprise implementation best practices."
+      },
+      "https://curity.io/resources/learn/jwt-best-practices/": {
+        "id": 8,
+        "publisher": "Curity",
+        "url": "https://curity.io/resources/learn/jwt-best-practices/",
+        "title": "JWT Security Best Practices",
+        "info": "JWT security best practices covering token validation, expiration handling, signing algorithms, anti-patterns, and enterprise implementation guidelines."
+      },
+      "https://blog.rsisecurity.com/implementing-hipaa-security-rule-technical-safeguards-for-electronic-phi/": {
+        "id": 9,
+        "publisher": "RSI Security",
+        "url": "https://blog.rsisecurity.com/implementing-hipaa-security-rule-technical-safeguards-for-electronic-phi/",
+        "title": "HIPAA Security Rule: Technical Safeguards for Electronic PHI",
+        "info": "Comprehensive HIPAA Security Rule technical safeguards implementation guide covering access controls, encryption requirements, audit controls, and integrity measures for electronic PHI protection."
+      },
+      "https://secureframe.com/hub/soc-2/what-is-soc-2": {
+        "id": 10,
+        "publisher": "Secureframe",
+        "url": "https://secureframe.com/hub/soc-2/what-is-soc-2",
+        "title": "What is SOC 2? A Beginners Guide to Compliance",
+        "info": "Complete SOC 2 compliance guide covering Type II audit requirements, Trust Services Criteria, security controls implementation, and data protection measures for enterprise systems."
+      },
+      "https://www.isms.online/iso-27001/": {
+        "id": 11,
+        "publisher": "ISMS.online",
+        "url": "https://www.isms.online/iso-27001/",
+        "title": "What is ISO/IEC 27001, The Information Security Standard",
+        "info": "Comprehensive ISO 27001:2022 implementation guide covering ISMS controls, Annex A security controls, and implementation guidelines for information security management systems."
+      },
+      "https://www.splunk.com/en_us/blog/learn/audit-logs.html": {
+        "id": 12,
+        "publisher": "Splunk",
+        "url": "https://www.splunk.com/en_us/blog/learn/audit-logs.html",
+        "title": "Audit Logging: A Comprehensive Guide",
+        "info": "Detailed audit logging implementation guide covering security logging best practices, compliance requirements, audit trail management, and forensic investigation procedures."
+      },
+      "https://www.ibm.com/think/topics/general-data-protection-regulation-implementation": {
+        "id": 13,
+        "publisher": "IBM",
+        "url": "https://www.ibm.com/think/topics/general-data-protection-regulation-implementation",
+        "title": "How to Implement General Data Protection Regulation (GDPR)",
+        "info": "Comprehensive GDPR compliance implementation guide covering privacy protection mechanisms, data handling requirements, automation strategies, and privacy-by-design principles for data processing systems."
+      },
+      "https://www.striim.com/blog/data-pipeline-architecture-key-patterns-and-best-practices/": {
+        "id": 14,
+        "publisher": "Striim",
+        "url": "https://www.striim.com/blog/data-pipeline-architecture-key-patterns-and-best-practices/",
+        "title": "Data Pipeline Architecture: Key Patterns and Best Practices",
+        "info": "Data pipeline security architecture patterns including access controls, data masking, encryption methods, security governance, and compliance requirements for enterprise data automation systems."
+      },
+      "https://www.ardoq.com/knowledge-hub/enterprise-security-architecture": {
+        "id": 15,
+        "publisher": "Ardoq",
+        "url": "https://www.ardoq.com/knowledge-hub/enterprise-security-architecture",
+        "title": "What Is Enterprise Security Architecture? The Definitive Guide",
+        "info": "Comprehensive enterprise security architecture framework guide covering implementation approaches, security controls, risk management strategies, and best practices for enterprise environments."
+      },
+      "https://www.alation.com/blog/data-governance-framework/": {
+        "id": 16,
+        "publisher": "Alation",
+        "url": "https://www.alation.com/blog/data-governance-framework/",
+        "title": "Data Governance Framework: A Step-by-Step Guide for 2025",
+        "info": "Data governance framework guide covering implementation strategies, security controls, privacy protection mechanisms, and best practices for enterprise automation systems."
+      }
+    },
+    "Modern NLP Libraries for Intelligent Data Extraction": {
+      "https://spacy.io/": {
+        "id": 17,
+        "publisher": "Explosion AI",
+        "url": "https://spacy.io/",
+        "title": "spaCy - Industrial-strength Natural Language Processing",
+        "info": "Comprehensive features, performance metrics (NER accuracy 89.8% on Ontonotes, 91.6% on CoNLL-2003), 75+ languages support, transformer integration capabilities, PDF/Word processing support"
+      },
+      "https://huggingface.co/docs/transformers/en/index": {
+        "id": 18,
+        "publisher": "Hugging Face",
+        "url": "https://huggingface.co/docs/transformers/en/index",
+        "title": "Transformers Documentation",
+        "info": "1M+ model checkpoints, support for text, computer vision, audio, video, multimodal models, training frameworks (PyTorch, TensorFlow), inference engines"
+      },
+      "https://cloud.google.com/natural-language": {
+        "id": 19,
+        "publisher": "Google Cloud",
+        "url": "https://cloud.google.com/natural-language",
+        "title": "Natural Language AI",
+        "info": "Entity extraction, sentiment analysis, entity sentiment analysis, content classification, syntax analysis, multimedia support with OCR, up to $300 free credits"
+      },
+      "https://docs.cloud.google.com/natural-language/pricing": {
+        "id": 20,
+        "publisher": "Google Cloud",
+        "url": "https://docs.cloud.google.com/natural-language/pricing",
+        "title": "Cloud Natural Language Pricing",
+        "info": "Usage-based pricing per 1K Unicode characters: entity analysis $0.001-$0.00025, sentiment analysis $0.001-$0.00025, syntax analysis $0.0005-$0.000125, entity sentiment $0.002-$0.0005"
+      },
+      "https://openai.com/api/pricing/": {
+        "id": 21,
+        "publisher": "OpenAI",
+        "url": "https://openai.com/api/pricing/",
+        "title": "API Pricing",
+        "info": "Token-based pricing for GPT-5 ($1.25-$120 per 1M tokens), GPT-5 mini ($0.25-$2 per 1M tokens), fine-tuning costs $3-$12 per 1M tokens, 50% batch API discount"
+      },
+      "https://medium.com/@digitalconsumer777/spacy-vs-nltk-which-nlp-library-should-you-choose-8b222529480a": {
+        "id": 22,
+        "publisher": "Medium",
+        "url": "https://medium.com/@digitalconsumer777/spacy-vs-nltk-which-nlp-library-should-you-choose-8b222529480a",
+        "title": "spaCy vs. NLTK: Which NLP Library Should You Choose?",
+        "info": "Detailed comparison: spaCy faster performance, modern API, NLTK slower but comprehensive toolkit for research, pros/cons analysis"
+      },
+      "https://www.geeksforgeeks.org/nlp/best-tools-for-natural-language-processing-in-2024/": {
+        "id": 23,
+        "publisher": "GeeksforGeeks",
+        "url": "https://www.geeksforgeeks.org/nlp/best-tools-for-natural-language-processing-in-2024/",
+        "title": "Best Tools for Natural Language Processing in 2025",
+        "info": "Comprehensive overview of 10 NLP tools: spaCy (fast, production-ready), NLTK (research/academic), Transformers (state-of-the-art), IBM Watson, Google Cloud NLP, Amazon Comprehend, Gensim, Stanford CoreNLP"
+      },
+      "https://huggingface.co/docs/peft/en/index": {
+        "id": 24,
+        "publisher": "Hugging Face",
+        "url": "https://huggingface.co/docs/peft/en/index",
+        "title": "PEFT - Parameter-Efficient Fine-Tuning",
+        "info": "Supports 20+ PEFT methods (LoRA, AdaLoRA, LoHa, IA3), integrates with Transformers/Diffusers/Accelerate, reduces computational costs while achieving comparable performance to full fine-tuning"
+      },
+      "https://arc.cct.ie/cgi/viewcontent.cgi?article=1054&context=ict": {
+        "id": 25,
+        "publisher": "Cork Institute of Technology",
+        "url": "https://arc.cct.ie/cgi/viewcontent.cgi?article=1054&context=ict",
+        "title": "Comparative Study of NLTK, spaCy, BERT, and DistilBERT",
+        "info": "Academic study comparing NLP libraries on customer query datasets for performance, accuracy, and use case recommendations"
+      },
+      "https://www.rapidinnovation.io/post/ai-in-anomaly-detection-for-businesses": {
+        "id": 26,
+        "publisher": "Rapid Innovation",
+        "url": "https://www.rapidinnovation.io/post/ai-in-anomaly-detection-for-businesses",
+        "title": "AI-Powered Anomaly Detection 2024 Guide",
+        "info": "Anomaly detection using NLP for pattern identification, business process monitoring, fraud detection applications"
+      }
+    }
+  }
+}
