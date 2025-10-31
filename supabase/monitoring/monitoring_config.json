@@ -1,0 +1,99 @@
+{
+  "alert_thresholds": {
+    "error_rates": {
+      "critical": 100,
+      "high": 75,
+      "medium": 50,
+      "low": 25
+    },
+    "processing_times": {
+      "critical": 900,
+      "high": 600,
+      "medium": 300,
+      "low": 180
+    },
+    "queue_backlog": {
+      "critical": 500,
+      "high": 200,
+      "medium": 100,
+      "low": 50
+    },
+    "system_health": {
+      "response_time_critical": 5000,
+      "response_time_warning": 2000,
+      "availability_threshold": 99.0
+    }
+  },
+  "notification_channels": {
+    "email": {
+      "enabled": true,
+      "smtp_server": "smtp.example.com",
+      "port": 587,
+      "recipients": ["admin@example.com", "ops@example.com"]
+    },
+    "slack": {
+      "enabled": false,
+      "webhook_url": "https://hooks.slack.com/services/YOUR/SLACK/WEBHOOK",
+      "channel": "#alerts"
+    },
+    "webhook": {
+      "enabled": false,
+      "url": "https://your-monitoring-service.com/webhook",
+      "secret": "your-webhook-secret"
+    }
+  },
+  "data_retention": {
+    "processing_metrics_days": 30,
+    "error_tracking_days_critical": 90,
+    "error_tracking_days_other": 30,
+    "performance_metrics_days": 7,
+    "alerts_resolved_days": 7,
+    "system_health_days": 90
+  },
+  "alert_escalation": {
+    "critical": {
+      "immediate": true,
+      "escalation_interval_minutes": 15,
+      "max_escalations": 3
+    },
+    "high": {
+      "immediate": true,
+      "escalation_interval_minutes": 30,
+      "max_escalations": 2
+    },
+    "medium": {
+      "immediate": false,
+      "escalation_interval_minutes": 60,
+      "max_escalations": 1
+    },
+    "low": {
+      "immediate": false,
+      "escalation_interval_minutes": 240,
+      "max_escalations": 0
+    }
+  },
+  "dashboard_settings": {
+    "refresh_interval_seconds": 30,
+    "timezone": "UTC",
+    "date_format": "YYYY-MM-DD HH:mm:ss",
+    "metrics_history_hours": 24
+  },
+  "monitoring_components": {
+    "api": {
+      "health_check_interval_seconds": 30,
+      "response_time_threshold_ms": 1000
+    },
+    "database": {
+      "health_check_interval_seconds": 60,
+      "connection_pool_threshold": 80
+    },
+    "queue": {
+      "health_check_interval_seconds": 30,
+      "processing_timeout_minutes": 30
+    },
+    "worker": {
+      "health_check_interval_seconds": 60,
+      "max_concurrent_tasks": 10
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "notifications": {
+    "email": {
+      "smtp_server": "smtp.gmail.com",
+      "smtp_port": "587",
+      "username": "your-email@company.com",
+      "password": "your-app-password",
+      "from_email": "error-prediction@company.com"
+    },
+    "slack": {
+      "webhook_url": "https://hooks.slack.com/services/YOUR/WEBHOOK/URL",
+      "channel": "#alerts",
+      "bot_token": "xoxb-your-bot-token"
+    }
+  },
+  "model_settings": {
+    "model_save_path": "./models/error_predictor.pkl",
+    "training_data_path": "./data/training_data.csv",
+    "generate_synthetic_training": true,
+    "prediction_threshold": 0.7
+  },
+  "system_settings": {
+    "max_concurrent_workflows": 100,
+    "health_check_interval": 60,
+    "stats_reporting_interval": 300,
+    "prediction_timeout_seconds": 30
+  },
+  "recovery_settings": {
+    "max_workflow_attempts": 3,
+    "workflow_timeout_minutes": 30,
+    "escalation_timeout_minutes": 15,
+    "default_retry_attempts": 3,
+    "default_retry_delay_seconds": 5
+  },
+  "monitoring_endpoint": null,
+  "scaling": {
+    "enabled": false,
+    "auto_scale": false,
+    "scale_up_threshold": 80,
+    "scale_down_threshold": 20
+  }
+}

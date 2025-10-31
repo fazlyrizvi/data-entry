@@ -1,0 +1,45 @@
+# CRM Integration Package Dependencies
+
+# Core dependencies
+aiohttp>=3.8.0
+asyncio
+
+# Optional dependencies for enhanced functionality
+# (uncomment as needed)
+
+# For advanced data validation
+# phonenumbers>=8.12.0
+
+# For data serialization/deserialization
+# pydantic>=1.9.0
+
+# For configuration management
+# python-decouple>=3.6
+
+# For additional date/time handling
+# python-dateutil>=2.8.0
+
+# For cryptographic operations (if needed)
+# cryptography>=3.4.0
+
+# For environment variable management
+# python-dotenv>=0.19.0
+
+# For async database operations (if using database storage)
+# asyncpg>=0.26.0
+
+# For caching (if implementing caching layer)
+# aioredis>=2.0.0
+
+# For monitoring and metrics
+# prometheus-client>=0.14.0
+
+# For testing
+pytest>=7.0.0
+pytest-asyncio>=0.21.0
+pytest-cov>=4.0.0
+
+# For development
+black>=22.0.0
+flake8>=5.0.0
+mypy>=0.991
