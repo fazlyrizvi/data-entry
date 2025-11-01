@@ -3,37 +3,44 @@
     "Coordinator": {
       "1": {
         "id": "1",
-        "content": "Add file upload and processing capabilities to the platform",
-        "details": "1. Implement drag-and-drop file upload interface. 2. Add support for CSV, PDF, TXT, JSON files. 3. Create file storage using Supabase Storage. 4. Implement real-time file processing workflows.",
-        "status": "completed",
+        "content": "Remove all demo/mock data and replace with real functionality",
+        "details": "1. Remove mockData.ts file and all sample data files. 2. Replace mock data with real database queries. 3. Remove sample files from public/dist folders. 4. Update all components to use real data.",
+        "status": "pending",
         "priority": "high"
       },
       "2": {
         "id": "2",
-        "content": "Implement real AI-powered data analysis using free APIs",
-        "details": "1. Connect Hugging Face API for text analysis (sentiment, classification, summarization). 2. Add document processing with Azure Computer Vision. 3. Create automated data insights generation. 4. Add real-time processing status updates.",
-        "status": "completed",
+        "content": "Replace paid Hugging Face API with free alternatives",
+        "details": "1. Remove hardcoded API key. 2. Implement client-side free AI APIs (like OpenAI-compatible free endpoints or browser-based analysis). 3. Use free sentiment analysis and text processing libraries. 4. Add fallbacks for offline processing.",
+        "status": "pending",
         "priority": "high"
       },
       "3": {
         "id": "3",
-        "content": "Build data visualization and export features",
-        "details": "1. Create dynamic charts and graphs from uploaded data. 2. Add data filtering and search capabilities. 3. Implement export functionality (PDF reports, CSV, JSON). 4. Add data comparison and trend analysis.",
-        "status": "completed",
+        "content": "Remove authentication requirements and make it fully public",
+        "details": "1. Remove auth requirements from all edge functions. 2. Update frontend to work without login. 3. Make all features accessible without user accounts. 4. Remove authentication context and related components.",
+        "status": "pending",
         "priority": "high"
       },
       "4": {
         "id": "4",
-        "content": "Add automation workflows for data processing",
-        "details": "1. Create automated data cleaning workflows. 2. Add scheduled data processing jobs. 3. Implement data validation and error handling. 4. Add notification system for workflow completion.",
-        "status": "completed",
+        "content": "Clean up Supabase database and ask about data retention",
+        "details": "1. Check current database state and tables. 2. Ask user about keeping existing data vs starting fresh. 3. Clean up unnecessary functions and data. 4. Optimize database structure for public usage.",
+        "status": "pending",
         "priority": "medium"
       },
       "5": {
         "id": "5",
-        "content": "Deploy and test the fully functional platform",
-        "details": "1. Test file upload with real data samples. 2. Verify all AI processing workflows. 3. Test data visualization and export. 4. Validate automation workflows. 5. Ensure zero-cost operation using free APIs.",
-        "status": "completed",
+        "content": "Add free data sources and real-time functionality",
+        "details": "1. Integrate free public APIs (weather, stocks, news, etc.). 2. Add real-time data processing. 3. Implement free OCR and document processing. 4. Add data export in multiple formats.",
+        "status": "pending",
+        "priority": "medium"
+      },
+      "6": {
+        "id": "6",
+        "content": "Test and deploy the fully functional platform",
+        "details": "1. Test all features with real data. 2. Ensure zero-cost operation. 3. Verify all edge functions work without auth. 4. Deploy and validate the complete platform.",
+        "status": "pending",
         "priority": "medium"
       }
     }
