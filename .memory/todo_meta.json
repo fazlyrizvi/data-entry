@@ -3,30 +3,30 @@
     "Coordinator": {
       "1": {
         "id": "1",
-        "content": "Research data entry job requirements and pain points",
-        "details": "1. Search for current data entry job postings and requirements. 2. Identify common data entry challenges. 3. Analyze automation opportunities. 4. Document findings for platform enhancement.",
-        "status": "completed",
+        "content": "Fix authentication form input field styling issues",
+        "details": "1. Add proper background colors (bg-white) to input fields for better visibility\n2. Improve border colors and focus states\n3. Ensure proper contrast ratios for accessibility\n4. Fix text color visibility in input fields\n5. Update both LoginForm and SignupForm components",
+        "status": "pending",
         "priority": "high"
       },
       "2": {
         "id": "2",
-        "content": "Identify free APIs and open source solutions for data processing",
-        "details": "1. Research free APIs for data validation and processing. 2. Find open source libraries for data entry automation. 3. Explore OCR, data extraction, and validation services. 4. Document integration possibilities.",
-        "status": "completed",
+        "content": "Create demo account in Supabase",
+        "details": "1. Create user account with email: demo@dataflow.com and password: demo123\n2. Verify the account can be used to login\n3. Ensure proper role assignment for demo user",
+        "status": "pending",
         "priority": "high"
       },
       "3": {
         "id": "3",
-        "content": "Enhance the Enterprise Data Automation Platform",
-        "details": "1. Add new data entry templates and workflows. 2. Integrate free APIs for data validation. 3. Implement OCR capabilities for document processing. 4. Add automated data cleaning and validation features. 5. Create user-friendly forms for different job types.",
-        "status": "completed",
+        "content": "Improve overall UI/UX design",
+        "details": "1. Enhance color palette with better contrast\n2. Improve spacing and layout consistency\n3. Add better visual hierarchy with typography\n4. Improve button states (hover, active, disabled)\n5. Add smooth animations and transitions\n6. Enhance the dashboard and navigation components\n7. Improve responsive design for mobile devices\n8. Add better loading states and feedback",
+        "status": "pending",
         "priority": "high"
       },
       "4": {
         "id": "4",
-        "content": "Test and deploy enhanced platform",
-        "details": "1. Test all new features with real data entry scenarios. 2. Validate API integrations work properly. 3. Ensure responsive design and user experience. 4. Deploy updated version to GitHub.",
-        "status": "completed",
+        "content": "Test and deploy updated platform",
+        "details": "1. Test login with demo credentials\n2. Verify form styling on different screen sizes\n3. Check accessibility standards\n4. Deploy to production\n5. Push to GitHub",
+        "status": "pending",
         "priority": "medium"
       }
     }
