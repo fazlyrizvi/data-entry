@@ -12,7 +12,10 @@ import {
   Bell,
   User,
   Menu,
-  X
+  X,
+  Brain,
+  Zap,
+  Globe
 } from 'lucide-react'
 import { useAuth } from '../contexts/AuthContext'
 import { cn } from '../lib/utils'
@@ -54,6 +57,24 @@ const navigationItems: NavigationItem[] = [
     href: '/commands',
     icon: MessageSquare,
     roles: ['admin', 'manager', 'operator', 'viewer']
+  },
+  {
+    name: 'AI Analysis',
+    href: '/ai-analysis',
+    icon: Brain,
+    roles: ['admin', 'manager', 'analyst']
+  },
+  {
+    name: 'Workflows',
+    href: '/workflows',
+    icon: Zap,
+    roles: ['admin', 'manager', 'operator']
+  },
+  {
+    name: 'Data Feeds',
+    href: '/data-feeds',
+    icon: Globe,
+    roles: ['admin', 'manager', 'analyst']
   },
   {
     name: 'Access Control',

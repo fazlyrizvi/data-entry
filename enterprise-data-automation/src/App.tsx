@@ -9,6 +9,9 @@ import { DataValidationInterface } from './components/validation/DataValidationI
 import { AnalyticsDashboard } from './components/analytics/AnalyticsDashboard'
 import { NLCommandInterface } from './components/commands/NLCommandInterface'
 import { AccessControlInterface } from './components/access/AccessControlInterface'
+import { AIAnalysisInterface } from './components/ai/AIAnalysisInterface'
+import { WorkflowBuilderInterface } from './components/workflows/WorkflowBuilderInterface'
+import { DataFeedsInterface } from './components/feeds/DataFeedsInterface'
 
 // Role-based route protection
 const ProtectedRoute: React.FC<{ 
@@ -106,6 +109,45 @@ const AccessPage: React.FC = () => {
   )
 }
 
+const AIAnalysisPage: React.FC = () => {
+  const { user } = useAuth()
+  
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-neutral-100 to-primary-50">
+      <Navigation />
+      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <AIAnalysisInterface />
+      </main>
+    </div>
+  )
+}
+
+const WorkflowBuilderPage: React.FC = () => {
+  const { user } = useAuth()
+  
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-neutral-100 to-primary-50">
+      <Navigation />
+      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <WorkflowBuilderInterface />
+      </main>
+    </div>
+  )
+}
+
+const DataFeedsPage: React.FC = () => {
+  const { user } = useAuth()
+  
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-neutral-100 to-primary-50">
+      <Navigation />
+      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <DataFeedsInterface />
+      </main>
+    </div>
+  )
+}
+
 const App: React.FC = () => {
   return (
     <AuthProvider>
@@ -150,6 +192,30 @@ const App: React.FC = () => {
               element={
                 <ProtectedRoute allowedRoles={['admin']}>
                   <AccessPage />
+                </ProtectedRoute>
+              } 
+            />
+            <Route 
+              path="/ai-analysis" 
+              element={
+                <ProtectedRoute allowedRoles={['admin', 'manager', 'analyst']}>
+                  <AIAnalysisPage />
+                </ProtectedRoute>
+              } 
+            />
+            <Route 
+              path="/workflows" 
+              element={
+                <ProtectedRoute allowedRoles={['admin', 'manager', 'operator']}>
+                  <WorkflowBuilderPage />
+                </ProtectedRoute>
+              } 
+            />
+            <Route 
+              path="/data-feeds" 
+              element={
+                <ProtectedRoute allowedRoles={['admin', 'manager', 'analyst']}>
+                  <DataFeedsPage />
                 </ProtectedRoute>
               } 
             />
