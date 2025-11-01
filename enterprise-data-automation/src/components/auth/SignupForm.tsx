@@ -95,15 +95,15 @@ export const SignupForm: React.FC = () => {
       <div className="w-full max-w-md">
         {/* Logo and Header */}
         <div className="text-center mb-8">
-          <div className="w-16 h-16 bg-primary-500 rounded-xl flex items-center justify-center mx-auto mb-4">
+          <div className="w-16 h-16 bg-gradient-to-br from-blue-600 to-blue-700 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg">
             <CheckCircle className="w-8 h-8 text-white" />
           </div>
-          <h1 className="text-3xl font-bold text-neutral-900 mb-2">Create Account</h1>
-          <p className="text-neutral-600">Join the Enterprise Data Automation platform</p>
+          <h1 className="text-3xl font-bold text-gray-900 mb-2">Create Account</h1>
+          <p className="text-gray-600">Join the Enterprise Data Automation platform</p>
         </div>
 
         {/* Signup Form */}
-        <div className="bg-glass-light backdrop-blur-glass border border-glass-border rounded-xl p-8">
+        <div className="bg-white/95 backdrop-blur-sm border border-gray-200 shadow-xl rounded-2xl p-8">
           <form onSubmit={handleSubmit} className="space-y-6">
             {/* General Error */}
             {errors.general && (
@@ -127,10 +127,10 @@ export const SignupForm: React.FC = () => {
                   required
                   value={formData.fullName}
                   onChange={handleChange}
-                  className={`w-full pl-10 pr-4 py-3 border rounded-lg focus:outline-none focus:ring-2 transition-colors ${
+                  className={`w-full pl-10 pr-4 py-3 bg-white text-gray-900 border rounded-lg focus:outline-none focus:ring-2 transition-all duration-200 ${
                     errors.fullName 
                       ? 'border-red-300 focus:ring-red-500 focus:border-red-500' 
-                      : 'border-neutral-300 focus:ring-primary-500 focus:border-primary-500'
+                      : 'border-gray-300 hover:border-gray-400 focus:ring-blue-500 focus:border-blue-500'
                   }`}
                   placeholder="Enter your full name"
                 />
@@ -155,10 +155,10 @@ export const SignupForm: React.FC = () => {
                   required
                   value={formData.email}
                   onChange={handleChange}
-                  className={`w-full pl-10 pr-4 py-3 border rounded-lg focus:outline-none focus:ring-2 transition-colors ${
+                  className={`w-full pl-10 pr-4 py-3 bg-white text-gray-900 border rounded-lg focus:outline-none focus:ring-2 transition-all duration-200 ${
                     errors.email 
                       ? 'border-red-300 focus:ring-red-500 focus:border-red-500' 
-                      : 'border-neutral-300 focus:ring-primary-500 focus:border-primary-500'
+                      : 'border-gray-300 hover:border-gray-400 focus:ring-blue-500 focus:border-blue-500'
                   }`}
                   placeholder="Enter your email"
                 />
@@ -183,10 +183,10 @@ export const SignupForm: React.FC = () => {
                   required
                   value={formData.password}
                   onChange={handleChange}
-                  className={`w-full pl-10 pr-12 py-3 border rounded-lg focus:outline-none focus:ring-2 transition-colors ${
+                  className={`w-full pl-10 pr-12 py-3 bg-white text-gray-900 border rounded-lg focus:outline-none focus:ring-2 transition-all duration-200 ${
                     errors.password 
                       ? 'border-red-300 focus:ring-red-500 focus:border-red-500' 
-                      : 'border-neutral-300 focus:ring-primary-500 focus:border-primary-500'
+                      : 'border-gray-300 hover:border-gray-400 focus:ring-blue-500 focus:border-blue-500'
                   }`}
                   placeholder="Create a password"
                 />
@@ -235,10 +235,10 @@ export const SignupForm: React.FC = () => {
                   required
                   value={formData.confirmPassword}
                   onChange={handleChange}
-                  className={`w-full pl-10 pr-12 py-3 border rounded-lg focus:outline-none focus:ring-2 transition-colors ${
+                  className={`w-full pl-10 pr-12 py-3 bg-white text-gray-900 border rounded-lg focus:outline-none focus:ring-2 transition-all duration-200 ${
                     errors.confirmPassword 
                       ? 'border-red-300 focus:ring-red-500 focus:border-red-500' 
-                      : 'border-neutral-300 focus:ring-primary-500 focus:border-primary-500'
+                      : 'border-gray-300 hover:border-gray-400 focus:ring-blue-500 focus:border-blue-500'
                   }`}
                   placeholder="Confirm your password"
                 />
@@ -259,7 +259,7 @@ export const SignupForm: React.FC = () => {
             <button
               type="submit"
               disabled={loading}
-              className="w-full flex items-center justify-center px-4 py-3 bg-primary-500 text-white font-medium rounded-lg hover:bg-primary-600 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+              className="w-full flex items-center justify-center px-4 py-3 bg-gradient-to-r from-blue-600 to-blue-700 text-white font-semibold rounded-lg hover:from-blue-700 hover:to-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transform transition-all duration-200 hover:shadow-lg disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
             >
               {loading ? (
                 <Loader2 className="w-5 h-5 animate-spin" />

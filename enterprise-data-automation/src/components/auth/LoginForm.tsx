@@ -72,15 +72,15 @@ export const LoginForm: React.FC = () => {
       <div className="w-full max-w-md">
         {/* Logo and Header */}
         <div className="text-center mb-8">
-          <div className="w-16 h-16 bg-primary-500 rounded-xl flex items-center justify-center mx-auto mb-4">
+          <div className="w-16 h-16 bg-gradient-to-br from-blue-600 to-blue-700 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg">
             <CheckCircle className="w-8 h-8 text-white" />
           </div>
-          <h1 className="text-3xl font-bold text-neutral-900 mb-2">Welcome Back</h1>
-          <p className="text-neutral-600">Sign in to your Enterprise Data Automation account</p>
+          <h1 className="text-3xl font-bold text-gray-900 mb-2">Welcome Back</h1>
+          <p className="text-gray-600">Sign in to your Enterprise Data Automation account</p>
         </div>
 
         {/* Login Form */}
-        <div className="bg-glass-light backdrop-blur-glass border border-glass-border rounded-xl p-8">
+        <div className="bg-white/95 backdrop-blur-sm border border-gray-200 shadow-xl rounded-2xl p-8">
           <form onSubmit={handleSubmit} className="space-y-6">
             {/* General Error */}
             {errors.general && (
@@ -104,10 +104,10 @@ export const LoginForm: React.FC = () => {
                   required
                   value={formData.email}
                   onChange={handleChange}
-                  className={`w-full pl-10 pr-4 py-3 border rounded-lg focus:outline-none focus:ring-2 transition-colors ${
+                  className={`w-full pl-10 pr-4 py-3 bg-white text-gray-900 border rounded-lg focus:outline-none focus:ring-2 transition-all duration-200 ${
                     errors.email 
                       ? 'border-red-300 focus:ring-red-500 focus:border-red-500' 
-                      : 'border-neutral-300 focus:ring-primary-500 focus:border-primary-500'
+                      : 'border-gray-300 hover:border-gray-400 focus:ring-blue-500 focus:border-blue-500'
                   }`}
                   placeholder="Enter your email"
                 />
@@ -132,10 +132,10 @@ export const LoginForm: React.FC = () => {
                   required
                   value={formData.password}
                   onChange={handleChange}
-                  className={`w-full pl-10 pr-12 py-3 border rounded-lg focus:outline-none focus:ring-2 transition-colors ${
+                  className={`w-full pl-10 pr-12 py-3 bg-white text-gray-900 border rounded-lg focus:outline-none focus:ring-2 transition-all duration-200 ${
                     errors.password 
                       ? 'border-red-300 focus:ring-red-500 focus:border-red-500' 
-                      : 'border-neutral-300 focus:ring-primary-500 focus:border-primary-500'
+                      : 'border-gray-300 hover:border-gray-400 focus:ring-blue-500 focus:border-blue-500'
                   }`}
                   placeholder="Enter your password"
                 />
@@ -156,7 +156,7 @@ export const LoginForm: React.FC = () => {
             <button
               type="submit"
               disabled={loading}
-              className="w-full flex items-center justify-center px-4 py-3 bg-primary-500 text-white font-medium rounded-lg hover:bg-primary-600 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+              className="w-full flex items-center justify-center px-4 py-3 bg-gradient-to-r from-blue-600 to-blue-700 text-white font-semibold rounded-lg hover:from-blue-700 hover:to-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transform transition-all duration-200 hover:shadow-lg disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
             >
               {loading ? (
                 <Loader2 className="w-5 h-5 animate-spin" />
@@ -195,12 +195,19 @@ export const LoginForm: React.FC = () => {
           </div>
 
           {/* Demo Credentials */}
-          <div className="mt-6 p-4 bg-blue-50 border border-blue-200 rounded-lg">
-            <h4 className="text-sm font-medium text-blue-900 mb-2">Demo Credentials</h4>
-            <p className="text-xs text-blue-700 mb-2">
-              Email: demo@dataflow.com<br />
-              Password: demo123
-            </p>
+          <div className="mt-6 p-4 bg-gradient-to-r from-blue-50 to-indigo-50 border-2 border-blue-200 rounded-xl shadow-sm">
+            <h4 className="text-sm font-semibold text-blue-900 mb-2 flex items-center">
+              <CheckCircle className="w-4 h-4 mr-2" />
+              Demo Credentials
+            </h4>
+            <div className="bg-white/80 rounded-lg p-3 mb-3">
+              <p className="text-sm text-gray-700 font-medium mb-1">
+                📧 Email: <span className="font-mono text-blue-700">demo@dataflow.com</span>
+              </p>
+              <p className="text-sm text-gray-700 font-medium">
+                🔑 Password: <span className="font-mono text-blue-700">demo123</span>
+              </p>
+            </div>
             <button
               type="button"
               onClick={() => {
@@ -209,9 +216,10 @@ export const LoginForm: React.FC = () => {
                   password: 'demo123'
                 })
               }}
-              className="text-xs text-blue-600 hover:text-blue-800 underline"
+              className="w-full text-sm bg-blue-600 text-white font-medium py-2 px-4 rounded-lg hover:bg-blue-700 transition-all duration-200 flex items-center justify-center space-x-2"
             >
-              Use demo credentials
+              <span>Use Demo Credentials</span>
+              <ArrowRight className="w-4 h-4" />
             </button>
           </div>
         </div>
