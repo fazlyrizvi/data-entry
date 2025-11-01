@@ -111,8 +111,9 @@ module.exports = {
         full: '9999px',
       },
       backdropBlur: {
-        glass: 'blur(20px) saturate(150%)',
-        glassStrong: 'blur(40px) saturate(150%)',
+        glass: '20px',
+        glassStrong: '40px',
+        md: '12px',
       },
       boxShadow: {
         card: '0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06)',
@@ -125,6 +126,9 @@ module.exports = {
         'accordion-up': 'accordion-up 0.2s ease-out',
         'shimmer': 'shimmer 1.5s infinite',
         'pulse-subtle': 'pulse-subtle 2s infinite',
+        'in': 'fadeIn 0.2s ease-out',
+        'fade-in': 'fadeIn 0.2s ease-out',
+        'slide-in-from-top-2': 'slideInFromTop 0.2s ease-out',
       },
       keyframes: {
         'accordion-down': {
@@ -142,6 +146,14 @@ module.exports = {
         'pulse-subtle': {
           '0%, 100%': { opacity: 1 },
           '50%': { opacity: 0.8 },
+        },
+        fadeIn: {
+          '0%': { opacity: 0 },
+          '100%': { opacity: 1 },
+        },
+        slideInFromTop: {
+          '0%': { transform: 'translateY(-8px)', opacity: 0 },
+          '100%': { transform: 'translateY(0)', opacity: 1 },
         },
       },
     },

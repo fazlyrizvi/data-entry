@@ -474,25 +474,37 @@ const App: React.FC = () => {
           </Routes>
           <Toaster 
             position="top-right"
+            containerStyle={{
+              top: '80px',
+              right: '20px',
+              zIndex: 9999,
+            }}
             toastOptions={{
               duration: 4000,
               style: {
-                background: 'rgba(255, 255, 255, 0.9)',
-                backdropFilter: 'blur(20px)',
-                border: '1px solid rgba(255, 255, 255, 0.3)',
+                background: 'rgba(255, 255, 255, 0.95)',
+                backdropFilter: 'blur(12px)',
+                border: '1px solid rgba(229, 231, 235, 0.5)',
                 borderRadius: '12px',
-                boxShadow: '0 8px 32px rgba(0, 0, 0, 0.08)',
+                boxShadow: '0 10px 40px rgba(0, 0, 0, 0.1)',
+                padding: '16px',
               },
               success: {
                 iconTheme: {
                   primary: '#10B981',
                   secondary: '#ffffff',
                 },
+                style: {
+                  border: '1px solid rgba(16, 185, 129, 0.2)',
+                },
               },
               error: {
                 iconTheme: {
                   primary: '#EF4444',
                   secondary: '#ffffff',
+                },
+                style: {
+                  border: '1px solid rgba(239, 68, 68, 0.2)',
                 },
               },
             }}
