@@ -102,7 +102,7 @@ Deno.serve(async (req) => {
         file_type: cleanFileType,
         storage_bucket: 'uploaded-files',
         storage_url: storageUrl,
-        uploaded_by: userId,
+        uploaded_by: userId && userId.match(/^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i) ? userId : null,
         upload_status: 'uploaded',
         processing_status: 'pending',
         metadata: {

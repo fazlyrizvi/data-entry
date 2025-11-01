@@ -11,7 +11,7 @@
       "2": {
         "id": "2",
         "content": "Implement real AI-powered data analysis using free APIs",
-        "details": "1. Connect Hugging Face API for text analysis (sentiment, classification, summarization). 2. Add document processing with OCR using Azure Computer Vision. 3. Create automated data insights generation. 4. Add real-time processing status updates.",
+        "details": "1. Connect Hugging Face API for text analysis (sentiment, classification, summarization). 2. Add document processing with Azure Computer Vision. 3. Create automated data insights generation. 4. Add real-time processing status updates.",
         "status": "completed",
         "priority": "high"
       },
