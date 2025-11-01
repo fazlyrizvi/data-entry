@@ -1,7 +1,7 @@
 import React from 'react'
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom'
 import { Toaster } from 'react-hot-toast'
-import { AuthProvider, useAuth } from './contexts/AuthContext'
+import { AuthProvider } from './contexts/AuthContext'
 import { Navigation } from './components/Navigation'
 import { WorkflowDashboard } from './components/dashboard/WorkflowDashboard'
 import { FileUploadInterface } from './components/files/FileUploadInterface'
@@ -13,27 +13,14 @@ import { AIAnalysisInterface } from './components/ai/AIAnalysisInterface'
 import { WorkflowBuilderInterface } from './components/workflows/WorkflowBuilderInterface'
 import { DataFeedsInterface } from './components/feeds/DataFeedsInterface'
 
-// Role-based route protection
-const ProtectedRoute: React.FC<{ 
+// Public route wrapper - no authentication required
+const PublicRoute: React.FC<{ 
   children: React.ReactNode
-  allowedRoles: string[]
-}> = ({ children, allowedRoles }) => {
-  const { user } = useAuth()
-  
-  if (!user) {
-    return <Navigate to="/" replace />
-  }
-  
-  if (!allowedRoles.includes(user.role)) {
-    return <Navigate to="/" replace />
-  }
-  
+}> = ({ children }) => {
   return <>{children}</>
 }
 
 const HomePage: React.FC = () => {
-  const { user } = useAuth()
-  
   return (
     <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-neutral-100 to-primary-50">
       <Navigation />
@@ -45,8 +32,6 @@ const HomePage: React.FC = () => {
 }
 
 const FilesPage: React.FC = () => {
-  const { user } = useAuth()
-  
   return (
     <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-neutral-100 to-primary-50">
       <Navigation />
@@ -58,8 +43,6 @@ const FilesPage: React.FC = () => {
 }
 
 const ValidationPage: React.FC = () => {
-  const { user } = useAuth()
-  
   return (
     <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-neutral-100 to-primary-50">
       <Navigation />
@@ -71,8 +54,6 @@ const ValidationPage: React.FC = () => {
 }
 
 const AnalyticsPage: React.FC = () => {
-  const { user } = useAuth()
-  
   return (
     <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-neutral-100 to-primary-50">
       <Navigation />
@@ -84,8 +65,6 @@ const AnalyticsPage: React.FC = () => {
 }
 
 const CommandsPage: React.FC = () => {
-  const { user } = useAuth()
-  
   return (
     <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-neutral-100 to-primary-50">
       <Navigation />
@@ -97,8 +76,6 @@ const CommandsPage: React.FC = () => {
 }
 
 const AccessPage: React.FC = () => {
-  const { user } = useAuth()
-  
   return (
     <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-neutral-100 to-primary-50">
       <Navigation />
@@ -110,8 +87,6 @@ const AccessPage: React.FC = () => {
 }
 
 const AIAnalysisPage: React.FC = () => {
-  const { user } = useAuth()
-  
   return (
     <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-neutral-100 to-primary-50">
       <Navigation />
@@ -123,8 +98,6 @@ const AIAnalysisPage: React.FC = () => {
 }
 
 const WorkflowBuilderPage: React.FC = () => {
-  const { user } = useAuth()
-  
   return (
     <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-neutral-100 to-primary-50">
       <Navigation />
@@ -136,8 +109,6 @@ const WorkflowBuilderPage: React.FC = () => {
 }
 
 const DataFeedsPage: React.FC = () => {
-  const { user } = useAuth()
-  
   return (
     <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-neutral-100 to-primary-50">
       <Navigation />
@@ -155,70 +126,14 @@ const App: React.FC = () => {
         <div className="App">
           <Routes>
             <Route path="/" element={<HomePage />} />
-            <Route 
-              path="/files" 
-              element={
-                <ProtectedRoute allowedRoles={['admin', 'manager', 'operator']}>
-                  <FilesPage />
-                </ProtectedRoute>
-              } 
-            />
-            <Route 
-              path="/validation" 
-              element={
-                <ProtectedRoute allowedRoles={['admin', 'manager', 'operator']}>
-                  <ValidationPage />
-                </ProtectedRoute>
-              } 
-            />
-            <Route 
-              path="/analytics" 
-              element={
-                <ProtectedRoute allowedRoles={['admin', 'manager']}>
-                  <AnalyticsPage />
-                </ProtectedRoute>
-              } 
-            />
-            <Route 
-              path="/commands" 
-              element={
-                <ProtectedRoute allowedRoles={['admin', 'manager', 'operator', 'viewer']}>
-                  <CommandsPage />
-                </ProtectedRoute>
-              } 
-            />
-            <Route 
-              path="/access" 
-              element={
-                <ProtectedRoute allowedRoles={['admin']}>
-                  <AccessPage />
-                </ProtectedRoute>
-              } 
-            />
-            <Route 
-              path="/ai-analysis" 
-              element={
-                <ProtectedRoute allowedRoles={['admin', 'manager', 'analyst']}>
-                  <AIAnalysisPage />
-                </ProtectedRoute>
-              } 
-            />
-            <Route 
-              path="/workflows" 
-              element={
-                <ProtectedRoute allowedRoles={['admin', 'manager', 'operator']}>
-                  <WorkflowBuilderPage />
-                </ProtectedRoute>
-              } 
-            />
-            <Route 
-              path="/data-feeds" 
-              element={
-                <ProtectedRoute allowedRoles={['admin', 'manager', 'analyst']}>
-                  <DataFeedsPage />
-                </ProtectedRoute>
-              } 
-            />
+            <Route path="/files" element={<FilesPage />} />
+            <Route path="/validation" element={<ValidationPage />} />
+            <Route path="/analytics" element={<AnalyticsPage />} />
+            <Route path="/commands" element={<CommandsPage />} />
+            <Route path="/access" element={<AccessPage />} />
+            <Route path="/ai-analysis" element={<AIAnalysisPage />} />
+            <Route path="/workflows" element={<WorkflowBuilderPage />} />
+            <Route path="/data-feeds" element={<DataFeedsPage />} />
           </Routes>
           <Toaster 
             position="top-right"

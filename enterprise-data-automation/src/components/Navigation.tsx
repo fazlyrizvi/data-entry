@@ -89,9 +89,8 @@ export const Navigation: React.FC = () => {
   const location = useLocation()
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
-  const filteredNavItems = navigationItems.filter(item => 
-    user && item.roles.includes(user.role)
-  )
+  // Show all navigation items for public access
+  const filteredNavItems = navigationItems
 
   return (
     <nav className="sticky top-0 z-50 border-b border-neutral-200 bg-glass-light backdrop-blur-glass supports-[backdrop-filter]:bg-glass-light/40">

@@ -18,24 +18,69 @@ interface DashboardStats {
   totalJobs: number
   activeJobs: number
   completedToday: number
-  averageProcessingTime: number
-  errorRate: number
+  completedJobs: number
+  failedJobs: number
   systemUptime: number
+  errorRate: number
+  averageProcessingTime: number
   queueLength: number
   throughput: number
 }
 
 export const WorkflowDashboard: React.FC = () => {
   const [stats, setStats] = useState<DashboardStats>({
-    totalJobs: 12456,
-    activeJobs: 127,
-    completedToday: 342,
-    averageProcessingTime: 2.4,
-    errorRate: 0.8,
-    systemUptime: 99.9,
-    queueLength: 45,
-    throughput: 94.2
+    totalJobs: 0,
+    activeJobs: 0,
+    completedToday: 0,
+    completedJobs: 0,
+    failedJobs: 0,
+    systemUptime: 0,
+    errorRate: 0,
+    averageProcessingTime: 0,
+    queueLength: 0,
+    throughput: 0
   })
+  const [loading, setLoading] = useState(true)
+
+  // Load dashboard data
+  useEffect(() => {
+    const loadDashboardData = async () => {
+      try {
+        setLoading(true)
+        const systemHealth = await DataService.getSystemHealth()
+        const today = new Date().toISOString().split('T')[0]
+        
+        // Calculate completed today from metrics
+        const completedToday = systemHealth.completedJobs || 0
+        
+        setStats({
+          totalJobs: systemHealth.totalJobs || 0,
+          activeJobs: systemHealth.activeJobs || 0,
+          completedToday,
+          completedJobs: systemHealth.completedJobs || 0,
+          failedJobs: systemHealth.failedJobs || 0,
+          systemUptime: typeof systemHealth.systemUptime === 'string' ? 
+            parseFloat(systemHealth.systemUptime) || 99.9 : 
+            systemHealth.systemUptime || 99.9,
+          errorRate: parseFloat(systemHealth.errorRate) || 0,
+          averageProcessingTime: 2.4, // Default, can be calculated from actual data
+          queueLength: 0, // Default, can be enhanced with queue-specific logic
+          throughput: systemHealth.totalJobs > 0 ? 
+            ((systemHealth.completedJobs / systemHealth.totalJobs) * 100) : 0
+        })
+      } catch (error) {
+        console.error('Error loading dashboard data:', error)
+      } finally {
+        setLoading(false)
+      }
+    }
+
+    loadDashboardData()
+    
+    // Refresh every 30 seconds
+    const interval = setInterval(loadDashboardData, 30000)
+    return () => clearInterval(interval)
+  }, [])
 
   // Handler functions for action buttons
   const handleExportReport = () => {
@@ -96,14 +141,21 @@ export const WorkflowDashboard: React.FC = () => {
         if (metrics && systemHealth) {
           // Transform backend data to component format
           setStats({
-            totalJobs: systemHealth.totalJobs || 12456,
-            activeJobs: systemHealth.activeJobs || 127,
-            completedToday: systemHealth.completedJobs || 342,
+            totalJobs: systemHealth.totalJobs || 0,
+            activeJobs: systemHealth.activeJobs || 0,
+            completedToday: systemHealth.completedJobs || 0,
+            completedJobs: systemHealth.completedJobs || 0,
+            failedJobs: systemHealth.failedJobs || 0,
             averageProcessingTime: 2.4, // Not available in current backend schema
-            errorRate: parseFloat(systemHealth.errorRate) || 0.8,
-            systemUptime: systemHealth.systemUptime || 99.9,
-            queueLength: 45, // Not available in current backend schema
-            throughput: 94.2 // Not available in current backend schema
+            errorRate: typeof systemHealth.errorRate === 'string' ? 
+              parseFloat(systemHealth.errorRate) || 0 : 
+              systemHealth.errorRate || 0,
+            systemUptime: typeof systemHealth.systemUptime === 'string' ? 
+              parseFloat(systemHealth.systemUptime) || 99.9 : 
+              systemHealth.systemUptime || 99.9,
+            queueLength: 0, // Not available in current backend schema
+            throughput: systemHealth.totalJobs > 0 ? 
+              ((systemHealth.completedJobs / systemHealth.totalJobs) * 100) : 0
           })
         }
       } catch (error) {
