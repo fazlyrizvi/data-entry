@@ -1,0 +1,120 @@
+/* Global Layout Fixes */
+
+/* Prevent horizontal overflow */
+html,
+body {
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
+/* Container constraints */
+.page-container {
+  max-width: 100%;
+  overflow-x: hidden;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/* Grid responsive fixes */
+.grid {
+  max-width: 100%;
+}
+
+/* Prevent grid items from overflowing */
+.grid > * {
+  min-width: 0;
+  overflow-wrap: break-word;
+}
+
+/* Icon size constraints */
+svg {
+  flex-shrink: 0;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Card overflow prevention */
+.card,
+[class*="glass"],
+[class*="Card"] {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+/* Table overflow fixes */
+table {
+  max-width: 100%;
+  overflow-x: auto;
+  display: block;
+}
+
+@media (min-width: 768px) {
+  table {
+    display: table;
+  }
+}
+
+/* Flex container fixes */
+.flex {
+  max-width: 100%;
+  flex-wrap: wrap;
+}
+
+/* Button group fixes */
+.button-group {
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+/* Input field constraints */
+input,
+textarea,
+select {
+  max-width: 100%;
+  min-width: 0;
+}
+
+/* Chart container fixes */
+.recharts-wrapper,
+.chart-container {
+  max-width: 100% !important;
+  overflow: visible;
+}
+
+/* Modal and dropdown fixes */
+.modal,
+.dropdown {
+  max-width: calc(100vw - 2rem);
+}
+
+/* Responsive spacing utilities */
+@media (max-width: 640px) {
+  .space-x-8 {
+    gap: 1rem;
+  }
+  
+  .space-y-8 {
+    gap: 1rem;
+  }
+}
+
+/* Long text handling */
+.text-truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.text-break {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  hyphens: auto;
+}
+
+/* Sidebar and navigation fixes */
+nav,
+aside {
+  max-width: 100%;
+  overflow-x: hidden;
+}

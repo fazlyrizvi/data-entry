@@ -84,9 +84,9 @@ const PublicRoute: React.FC<{
 
 const HomePage: React.FC = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-neutral-100 to-primary-50">
+    <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-neutral-100 to-primary-50 overflow-x-hidden">
       <Navigation />
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <main className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <WorkflowDashboard />
       </main>
     </div>
@@ -95,9 +95,9 @@ const HomePage: React.FC = () => {
 
 const FilesPage: React.FC = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-neutral-100 to-primary-50">
+    <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-neutral-100 to-primary-50 overflow-x-hidden">
       <Navigation />
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <main className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <FileUploadInterface />
       </main>
     </div>
@@ -106,9 +106,9 @@ const FilesPage: React.FC = () => {
 
 const ValidationPage: React.FC = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-neutral-100 to-primary-50">
+    <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-neutral-100 to-primary-50 overflow-x-hidden">
       <Navigation />
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <main className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <DataValidationInterface />
       </main>
     </div>
@@ -117,9 +117,9 @@ const ValidationPage: React.FC = () => {
 
 const AnalyticsPage: React.FC = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-neutral-100 to-primary-50">
+    <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-neutral-100 to-primary-50 overflow-x-hidden">
       <Navigation />
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <main className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <AnalyticsDashboard />
       </main>
     </div>
@@ -128,9 +128,9 @@ const AnalyticsPage: React.FC = () => {
 
 const CommandsPage: React.FC = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-neutral-100 to-primary-50">
+    <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-neutral-100 to-primary-50 overflow-x-hidden">
       <Navigation />
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <main className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <NLCommandInterface />
       </main>
     </div>
@@ -139,9 +139,9 @@ const CommandsPage: React.FC = () => {
 
 const AccessPage: React.FC = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-neutral-100 to-primary-50">
+    <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-neutral-100 to-primary-50 overflow-x-hidden">
       <Navigation />
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <main className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <AccessControlInterface />
       </main>
     </div>
@@ -150,9 +150,9 @@ const AccessPage: React.FC = () => {
 
 const AIAnalysisPage: React.FC = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-neutral-100 to-primary-50">
+    <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-neutral-100 to-primary-50 overflow-x-hidden">
       <Navigation />
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <main className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <AIAnalysisInterface />
       </main>
     </div>
@@ -161,9 +161,9 @@ const AIAnalysisPage: React.FC = () => {
 
 const WorkflowBuilderPage: React.FC = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-neutral-100 to-primary-50">
+    <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-neutral-100 to-primary-50 overflow-x-hidden">
       <Navigation />
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <main className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <WorkflowBuilderInterface />
       </main>
     </div>
@@ -172,9 +172,9 @@ const WorkflowBuilderPage: React.FC = () => {
 
 const DataFeedsPage: React.FC = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-neutral-100 to-primary-50">
+    <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-neutral-100 to-primary-50 overflow-x-hidden">
       <Navigation />
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <main className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <DataFeedsInterface />
       </main>
     </div>
@@ -184,9 +184,9 @@ const DataFeedsPage: React.FC = () => {
 // New Comprehensive Data Automation Pages
 const DocumentProcessingPage: React.FC = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-neutral-100 to-primary-50">
+    <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-neutral-100 to-primary-50 overflow-x-hidden">
       <Navigation />
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <main className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <DocumentProcessingInterface />
       </main>
     </div>
@@ -195,9 +195,9 @@ const DocumentProcessingPage: React.FC = () => {
 
 const DataValidationPage: React.FC = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-neutral-100 to-primary-50">
+    <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-neutral-100 to-primary-50 overflow-x-hidden">
       <Navigation />
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <main className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <ValidationDashboard />
       </main>
     </div>
@@ -206,9 +206,9 @@ const DataValidationPage: React.FC = () => {
 
 const TemplatesPage: React.FC = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-neutral-100 to-primary-50">
+    <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-neutral-100 to-primary-50 overflow-x-hidden">
       <Navigation />
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <main className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <TemplateSelector />
       </main>
     </div>
@@ -217,9 +217,9 @@ const TemplatesPage: React.FC = () => {
 
 const MedicalRecordsPage: React.FC = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-neutral-100 to-primary-50">
+    <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-neutral-100 to-primary-50 overflow-x-hidden">
       <Navigation />
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <main className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <MedicalRecordsForm />
       </main>
     </div>
@@ -228,9 +228,9 @@ const MedicalRecordsPage: React.FC = () => {
 
 const BatchUploadPage: React.FC = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-neutral-100 to-primary-50">
+    <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-neutral-100 to-primary-50 overflow-x-hidden">
       <Navigation />
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <main className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <BatchUpload />
       </main>
     </div>
@@ -240,9 +240,9 @@ const BatchUploadPage: React.FC = () => {
 // New Data Automation Pages
 const DataEntryTemplatePage: React.FC = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-neutral-100 to-primary-50">
+    <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-neutral-100 to-primary-50 overflow-x-hidden">
       <Navigation />
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <main className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <DataEntryTemplateInterface />
       </main>
     </div>
@@ -251,9 +251,9 @@ const DataEntryTemplatePage: React.FC = () => {
 
 const OCRDocumentPage: React.FC = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-neutral-100 to-primary-50">
+    <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-neutral-100 to-primary-50 overflow-x-hidden">
       <Navigation />
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <main className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <OCRDocumentInterface />
       </main>
     </div>
@@ -262,9 +262,9 @@ const OCRDocumentPage: React.FC = () => {
 
 const QualityControlPage: React.FC = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-neutral-100 to-primary-50">
+    <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-neutral-100 to-primary-50 overflow-x-hidden">
       <Navigation />
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <main className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <QualityControlDashboard />
       </main>
     </div>
@@ -273,9 +273,9 @@ const QualityControlPage: React.FC = () => {
 
 const BatchProcessingPage: React.FC = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-neutral-100 to-primary-50">
+    <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-neutral-100 to-primary-50 overflow-x-hidden">
       <Navigation />
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <main className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <BatchProcessingInterface />
       </main>
     </div>
@@ -284,9 +284,9 @@ const BatchProcessingPage: React.FC = () => {
 
 const DataExportPage: React.FC = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-neutral-100 to-primary-50">
+    <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-neutral-100 to-primary-50 overflow-x-hidden">
       <Navigation />
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <main className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <DataExportInterface />
       </main>
     </div>
