@@ -35,6 +35,7 @@
   "typography": {
     "fontFamily": {
       "primary": { "value": "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif", "type": "fontFamily" },
+      "swiss": { "value": "'Helvetica Neue', 'Arial', sans-serif", "type": "fontFamily" },
       "mono": { "value": "'JetBrains Mono', 'Consolas', 'Monaco', monospace", "type": "fontFamily" }
     },
     "fontSize": {
@@ -47,7 +48,10 @@
       "large": { "value": "20px", "type": "dimension" },
       "body": { "value": "16px", "type": "dimension" },
       "small": { "value": "14px", "type": "dimension" },
-      "caption": { "value": "12px", "type": "dimension" }
+      "caption": { "value": "12px", "type": "dimension" },
+      "dataHeader": { "value": "14px", "type": "dimension" },
+      "dataCell": { "value": "14px", "type": "dimension" },
+      "dataMono": { "value": "13px", "type": "dimension" }
     },
     "fontWeight": {
       "regular": { "value": "400", "type": "number" },
@@ -78,7 +82,21 @@
     "3xl": { "value": "96px", "type": "dimension" },
     "4xl": { "value": "128px", "type": "dimension" }
   },
+  "grid": {
+    "baseUnit": { "value": "8px", "type": "dimension" },
+    "columnWidth": { "value": "64px", "type": "dimension" },
+    "gutterWidth": { "value": "24px", "type": "dimension" },
+    "maxWidth": { "value": "1200px", "type": "dimension" },
+    "breakpoints": {
+      "mobile": { "value": "768px", "type": "dimension" },
+      "tablet": { "value": "1024px", "type": "dimension" },
+      "desktop": { "value": "1200px", "type": "dimension" }
+    }
+  },
   "borderRadius": {
+    "none": { "value": "0px", "type": "dimension" },
+    "sharp": { "value": "2px", "type": "dimension" },
+    "minimal": { "value": "4px", "type": "dimension" },
     "sm": { "value": "8px", "type": "dimension" },
     "md": { "value": "12px", "type": "dimension" },
     "lg": { "value": "16px", "type": "dimension" },
