@@ -1,0 +1,30 @@
+Component,Metric,Value,Unit
+OCR,Average Processing Time,0.85,seconds
+OCR,Throughput,15.2,documents/second
+OCR,Success Rate,98.5,percent
+OCR,Accuracy,94.2,percent
+OCR,PDF Processing Time,2.34,seconds
+OCR,Spreadsheet Processing Time,0.23,seconds
+NLP,Entity Extraction Time,0.045,seconds
+NLP,Classification Time,0.038,seconds
+NLP,Form Field Time,0.041,seconds
+NLP,Overall Accuracy,89.5,percent
+Parallel,1 Worker Throughput,7.8,documents/second
+Parallel,2 Worker Throughput,14.6,documents/second
+Parallel,4 Worker Throughput,28.5,documents/second
+Parallel,8 Worker Throughput,53.4,documents/second
+Parallel,16 Worker Throughput,80.6,documents/second
+Parallel,Optimal Efficiency,87.3,percent
+Resource,Average CPU Usage,45.2,percent
+Resource,Peak CPU Usage,78.9,percent
+Resource,Average Memory Usage,62.1,percent
+Resource,Peak Memory Usage,84.3,percent
+Resource,Peak Memory MB,10842,MB
+Batch,100 Documents Time,1.2,seconds
+Batch,500 Documents Time,6.8,seconds
+Batch,1000 Documents Time,14.2,seconds
+Batch,2000 Documents Time,31.7,seconds
+Batch,5000 Documents Time,89.4,seconds
+Integration,End-to-End Time,2.34,seconds
+Integration,Pipeline Success Rate,91.8,percent
+Integration,Data Quality Score,87.3,percent

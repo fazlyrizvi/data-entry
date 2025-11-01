@@ -1,0 +1,10 @@
+{
+  "id": 4,
+  "type": "email",
+  "length": 388,
+  "complexity": "simple",
+  "language": "en",
+  "expected_entities": 6,
+  "created_at": "2025-10-31T19:36:17.806302",
+  "quality": "high"
+}

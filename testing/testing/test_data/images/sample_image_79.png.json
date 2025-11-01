@@ -1,0 +1,16 @@
+{
+  "id": 79,
+  "type": "image",
+  "filename": "sample_image_79.png",
+  "size": 57600,
+  "width": 640,
+  "height": 480,
+  "dpi": 72,
+  "quality": "low",
+  "format": "tiff",
+  "has_noise": true,
+  "has_skew": true,
+  "complexity": "complex",
+  "language": "en",
+  "created_at": "2025-10-31T19:36:16.744458"
+}

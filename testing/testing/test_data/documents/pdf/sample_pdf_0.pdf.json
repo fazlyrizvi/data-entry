@@ -1,0 +1,14 @@
+{
+  "id": 0,
+  "type": "pdf",
+  "filename": "sample_pdf_0.pdf",
+  "size": 104475,
+  "pages": 1,
+  "has_images": true,
+  "text_density": "medium",
+  "quality": "high",
+  "language": "en",
+  "complexity": "simple",
+  "created_at": "2025-10-12T19:36:15.631592",
+  "actual_file": "testing/test_data/documents/pdf/sample_pdf_0.pdf"
+}

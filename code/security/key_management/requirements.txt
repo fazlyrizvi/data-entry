@@ -1,0 +1,97 @@
+# Secure API Key Management System Requirements
+# Core cryptographic and security libraries
+cryptography>=41.0.0
+Fernet implementation for symmetric encryption
+
+# Supabase integration
+supabase>=1.0.0
+Python client for Supabase backend
+
+# Key generation and random number generation
+secrets
+Built-in Python secrets module for secure random generation
+
+# Task scheduling for automatic rotation
+croniter>=1.0.0
+Cron expression parser and scheduler for rotation policies (optional - basic scheduling available without it)
+
+# HTTP client for API calls
+requests>=2.31.0
+HTTP client library for external API integrations
+
+# Environment variable management
+python-dotenv>=1.0.0
+Load environment variables from .env files
+
+# Date and time handling
+python-dateutil>=2.8.0
+Date/time utilities for expiration and scheduling
+
+# JSON schema validation
+jsonschema>=4.17.0
+Validate configuration and request schemas
+
+# Configuration management
+PyYAML>=6.0
+YAML configuration file support
+
+# Logging and monitoring
+structlog>=23.0.0
+Structured logging for better observability
+
+# Database adapter (for local storage fallback)
+psycopg2-binary>=2.9.0
+PostgreSQL adapter for database storage
+
+# Testing framework
+pytest>=7.4.0
+Testing framework for unit and integration tests
+
+# Code quality
+black>=23.0.0
+Code formatter
+flake8>=6.0.0
+Linting
+mypy>=1.5.0
+Static type checking
+isort>=5.12.0
+Import sorting
+
+# Development dependencies
+coverage>=7.2.0
+Test coverage reporting
+pytest-cov>=4.0.0
+pytest coverage plugin
+bandit>=1.7.0
+Security linting
+
+# Optional: Hardware Security Module support
+# Uncomment if using HSM
+# pyhsm>=1.0.0
+# Python HSM interface (vendor specific)
+
+# Optional: Cloud KMS integration
+# google-cloud-kms>=2.19.0
+# Google Cloud KMS integration
+
+# Optional: AWS KMS integration
+# boto3>=1.28.0
+# AWS SDK for KMS integration
+
+# Optional: Azure Key Vault integration
+# azure-keyvault-secrets>=4.7.0
+# Azure Key Vault SDK
+
+# Monitoring and metrics
+prometheus-client>=0.17.0
+Prometheus metrics client
+psutil>=5.9.0
+System metrics
+
+# Async support (for high-performance deployments)
+# aiofiles>=23.0.0
+# Async file operations
+
+# Caching
+# redis>=4.6.0
+# Redis caching support

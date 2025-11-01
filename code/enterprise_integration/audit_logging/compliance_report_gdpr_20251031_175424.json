@@ -1,0 +1,366 @@
+{
+  "report_id": "gdpr_executive_summary_20251031_175424",
+  "framework": "gdpr",
+  "report_type": "executive_summary",
+  "generated_at": "2025-10-31T17:54:24.133523",
+  "period": {
+    "start_date": "2025-10-24T17:54:23.673342",
+    "end_date": "2025-10-31T17:54:23.673342",
+    "duration_days": 7
+  },
+  "summary": {
+    "total_audit_events": 20,
+    "compliance_specific_events": 5,
+    "event_types": {
+      "user_login": 10,
+      "system_config_change": 5,
+      "data_access": 5
+    },
+    "high_risk_events": 5,
+    "failed_events": 0,
+    "compliance_rate": 25.0,
+    "risk_distribution": {
+      "critical": 0,
+      "high": 5,
+      "medium": 5,
+      "low": 10
+    },
+    "top_event_types": {
+      "user_login": 10,
+      "system_config_change": 5,
+      "data_access": 5
+    }
+  },
+  "metrics": [
+    "ComplianceMetric(framework=<ComplianceFramework.GDPR: 'gdpr'>, requirement='Personal Data Processing', status='COMPLIANT', score=100, evidence_count=5, last_assessment=datetime.datetime(2025, 10, 31, 17, 54, 24, 133609), risk_level='LOW', details={'personal_data_events': 5})",
+    "ComplianceMetric(framework=<ComplianceFramework.GDPR: 'gdpr'>, requirement='Consent Management', status='NON_COMPLIANT', score=0.0, evidence_count=0, last_assessment=datetime.datetime(2025, 10, 31, 17, 54, 24, 133634), risk_level='CRITICAL', details={'consent_rate': 0.0, 'total_processing': 5})",
+    "ComplianceMetric(framework=<ComplianceFramework.GDPR: 'gdpr'>, requirement='Data Retention', status='PARTIAL', score=80, evidence_count=0, last_assessment=datetime.datetime(2025, 10, 31, 17, 54, 24, 133641), risk_level='MEDIUM', details={'retention_events': 0})",
+    "ComplianceMetric(framework=<ComplianceFramework.GDPR: 'gdpr'>, requirement='Data Subject Rights', status='PARTIAL', score=75, evidence_count=0, last_assessment=datetime.datetime(2025, 10, 31, 17, 54, 24, 133665), risk_level='MEDIUM', details={'subject_rights_events': 0})",
+    "ComplianceMetric(framework=<ComplianceFramework.GDPR: 'gdpr'>, requirement='Breach Notification', status='COMPLIANT', score=100, evidence_count=0, last_assessment=datetime.datetime(2025, 10, 31, 17, 54, 24, 133669), risk_level='LOW', details={'security_incidents': 0})",
+    "ComplianceMetric(framework=<ComplianceFramework.GDPR: 'gdpr'>, requirement='Privacy by Design', status='PARTIAL', score=70, evidence_count=0, last_assessment=datetime.datetime(2025, 10, 31, 17, 54, 24, 133675), risk_level='MEDIUM', details={'privacy_events': 0})",
+    "ComplianceMetric(framework=<ComplianceFramework.GDPR: 'gdpr'>, requirement='Data Protection Officer', status='NOT_ASSESSED', score=80, evidence_count=0, last_assessment=datetime.datetime(2025, 10, 31, 17, 54, 24, 133680), risk_level='LOW', details={'dpo_events': 0})",
+    "ComplianceMetric(framework=<ComplianceFramework.GDPR: 'gdpr'>, requirement='Cross-Border Transfer', status='NOT_ASSESSED', score=75, evidence_count=0, last_assessment=datetime.datetime(2025, 10, 31, 17, 54, 24, 133684), risk_level='MEDIUM', details={'transfer_events': 0})"
+  ],
+  "compliance_assessment": {
+    "overall_score": 72.5,
+    "compliance_status": "COMPLIANT",
+    "compliant_requirements": 2,
+    "non_compliant_requirements": 1,
+    "total_requirements": 8,
+    "compliance_percentage": 25.0,
+    "risk_summary": {
+      "critical_risks": 1,
+      "high_risks": 0,
+      "medium_risks": 4,
+      "low_risks": 3
+    }
+  },
+  "findings": [
+    {
+      "type": "HIGH_RISK_EVENT",
+      "severity": "HIGH",
+      "description": "High-risk event detected: system_config_change by user admin456",
+      "event_id": "4c86de61-fc52-4201-852c-a634d94328ed",
+      "timestamp": "2025-10-31T17:54:23.525653",
+      "recommendation": "Review and investigate immediately"
+    },
+    {
+      "type": "HIGH_RISK_EVENT",
+      "severity": "HIGH",
+      "description": "High-risk event detected: system_config_change by user admin456",
+      "event_id": "c63b66f5-ad1d-468a-9433-810c1d873964",
+      "timestamp": "2025-10-31T17:54:05.821488",
+      "recommendation": "Review and investigate immediately"
+    },
+    {
+      "type": "HIGH_RISK_EVENT",
+      "severity": "HIGH",
+      "description": "High-risk event detected: system_config_change by user admin456",
+      "event_id": "6a158a14-653c-4546-8dfe-b8474b802713",
+      "timestamp": "2025-10-31T17:53:43.143608",
+      "recommendation": "Review and investigate immediately"
+    },
+    {
+      "type": "HIGH_RISK_EVENT",
+      "severity": "HIGH",
+      "description": "High-risk event detected: system_config_change by user admin456",
+      "event_id": "2445a7b4-9305-4666-bc14-0e88e9b654b6",
+      "timestamp": "2025-10-31T17:53:21.973082",
+      "recommendation": "Review and investigate immediately"
+    },
+    {
+      "type": "HIGH_RISK_EVENT",
+      "severity": "HIGH",
+      "description": "High-risk event detected: system_config_change by user admin456",
+      "event_id": "0df8ae1e-0307-4ac6-a12b-a38e8d05e11d",
+      "timestamp": "2025-10-31T17:52:55.749307",
+      "recommendation": "Review and investigate immediately"
+    }
+  ],
+  "recommendations": [
+    {
+      "priority": "HIGH",
+      "category": "Consent Management",
+      "recommendation": "Implement comprehensive consent tracking system",
+      "rationale": "GDPR Article 7 requires demonstrable consent",
+      "implementation": "Deploy consent management platform and integrate with audit system"
+    },
+    {
+      "priority": "MEDIUM",
+      "category": "Data Retention",
+      "recommendation": "Automate data retention and deletion processes",
+      "rationale": "GDPR Article 5(1)(e) - storage limitation principle",
+      "implementation": "Set up automated retention policies and deletion workflows"
+    }
+  ],
+  "data_analysis": {
+    "temporal_analysis": {
+      "events_by_hour": {
+        "17": 20
+      },
+      "events_by_day": {
+        "Friday": 20
+      },
+      "peak_activity_hour": "17",
+      "low_activity_hours": {
+        "17": 20
+      }
+    },
+    "user_analysis": {
+      "active_users": 3,
+      "top_users_by_activity": {
+        "total_events": {
+          "user123": 10,
+          "admin456": 5,
+          "user789": 5
+        },
+        "avg_risk_score": {
+          "user123": 30.0,
+          "admin456": 80.0,
+          "user789": 10.0
+        },
+        "max_risk_score": {
+          "user123": 50,
+          "admin456": 80,
+          "user789": 10
+        },
+        "failed_events": {
+          "user123": 0,
+          "admin456": 0,
+          "user789": 0
+        }
+      },
+      "high_risk_users": {
+        "total_events": {
+          "admin456": 5
+        },
+        "avg_risk_score": {
+          "admin456": 80.0
+        },
+        "max_risk_score": {
+          "admin456": 80
+        },
+        "failed_events": {
+          "admin456": 0
+        }
+      },
+      "users_with_failures": {
+        "total_events": {},
+        "avg_risk_score": {},
+        "max_risk_score": {},
+        "failed_events": {}
+      }
+    },
+    "risk_analysis": {
+      "average_risk_score": 37.5,
+      "risk_distribution": {
+        "10": 10,
+        "80": 5,
+        "50": 5
+      },
+      "high_risk_events_by_type": {
+        "system_config_change": 5
+      },
+      "risk_correlation": {
+        "id": {
+          "id": 1.0,
+          "risk_score": 0.022064192308964916,
+          "hour": NaN
+        },
+        "risk_score": {
+          "id": 0.022064192308964916,
+          "risk_score": 1.0,
+          "hour": NaN
+        },
+        "hour": {
+          "id": NaN,
+          "risk_score": NaN,
+          "hour": NaN
+        }
+      }
+    },
+    "resource_analysis": {
+      "most_accessed_resources": {
+        "access_count": {
+          "customer_database/personal_info": 5,
+          "database/connection_pool": 5
+        },
+        "unique_users": {
+          "customer_database/personal_info": 1,
+          "database/connection_pool": 1
+        },
+        "avg_risk_score": {
+          "customer_database/personal_info": 50.0,
+          "database/connection_pool": 80.0
+        }
+      },
+      "high_risk_resources": {
+        "access_count": {
+          "database/connection_pool": 5
+        },
+        "unique_users": {
+          "database/connection_pool": 1
+        },
+        "avg_risk_score": {
+          "database/connection_pool": 80.0
+        }
+      },
+      "resources_by_unique_users": {
+        "access_count": {
+          "customer_database/personal_info": 5,
+          "database/connection_pool": 5
+        },
+        "unique_users": {
+          "customer_database/personal_info": 1,
+          "database/connection_pool": 1
+        },
+        "avg_risk_score": {
+          "customer_database/personal_info": 50.0,
+          "database/connection_pool": 80.0
+        }
+      }
+    }
+  },
+  "visualizations": {
+    "event_type_distribution": "compliance_visuals/gdpr_event_types.png",
+    "risk_distribution": "compliance_visuals/gdpr_risk_distribution.png"
+  },
+  "supporting_evidence": {
+    "sample_events": [
+      {
+        "event_id": "add20f92-cad7-4f6d-b7b2-15f321eaa248",
+        "timestamp": "2025-10-31T17:54:23.620070",
+        "event_type": "user_login",
+        "user_id": "user789",
+        "action": "login",
+        "outcome": "SUCCESS",
+        "risk_score": 10,
+        "compliance_level": "standard"
+      },
+      {
+        "event_id": "4c86de61-fc52-4201-852c-a634d94328ed",
+        "timestamp": "2025-10-31T17:54:23.525653",
+        "event_type": "system_config_change",
+        "user_id": "admin456",
+        "action": "modify_config",
+        "outcome": "SUCCESS",
+        "risk_score": 80,
+        "compliance_level": "standard"
+      },
+      {
+        "event_id": "358dd036-ff1b-4da2-af65-e0416fa32259",
+        "timestamp": "2025-10-31T17:54:23.480757",
+        "event_type": "data_access",
+        "user_id": "user123",
+        "action": "read",
+        "outcome": "SUCCESS",
+        "risk_score": 50,
+        "compliance_level": "gdpr"
+      },
+      {
+        "event_id": "24800c00-898f-4856-b2e4-a62604c39749",
+        "timestamp": "2025-10-31T17:54:23.425218",
+        "event_type": "user_login",
+        "user_id": "user123",
+        "action": "login",
+        "outcome": "SUCCESS",
+        "risk_score": 10,
+        "compliance_level": "standard"
+      },
+      {
+        "event_id": "86ab14a9-4786-41f3-90ca-5ecd3f2462cd",
+        "timestamp": "2025-10-31T17:54:05.891175",
+        "event_type": "user_login",
+        "user_id": "user789",
+        "action": "login",
+        "outcome": "SUCCESS",
+        "risk_score": 10,
+        "compliance_level": "standard"
+      },
+      {
+        "event_id": "c63b66f5-ad1d-468a-9433-810c1d873964",
+        "timestamp": "2025-10-31T17:54:05.821488",
+        "event_type": "system_config_change",
+        "user_id": "admin456",
+        "action": "modify_config",
+        "outcome": "SUCCESS",
+        "risk_score": 80,
+        "compliance_level": "standard"
+      },
+      {
+        "event_id": "bf9a76c2-1fe9-4ff2-b789-478a83cc934b",
+        "timestamp": "2025-10-31T17:54:05.683041",
+        "event_type": "data_access",
+        "user_id": "user123",
+        "action": "read",
+        "outcome": "SUCCESS",
+        "risk_score": 50,
+        "compliance_level": "gdpr"
+      },
+      {
+        "event_id": "3ad26b56-6cd2-4e66-9af0-120453d078be",
+        "timestamp": "2025-10-31T17:54:05.627711",
+        "event_type": "user_login",
+        "user_id": "user123",
+        "action": "login",
+        "outcome": "SUCCESS",
+        "risk_score": 10,
+        "compliance_level": "standard"
+      },
+      {
+        "event_id": "c0d76e78-215c-4a63-b663-d41b8842f2f2",
+        "timestamp": "2025-10-31T17:53:43.188877",
+        "event_type": "user_login",
+        "user_id": "user789",
+        "action": "login",
+        "outcome": "SUCCESS",
+        "risk_score": 10,
+        "compliance_level": "standard"
+      },
+      {
+        "event_id": "6a158a14-653c-4546-8dfe-b8474b802713",
+        "timestamp": "2025-10-31T17:53:43.143608",
+        "event_type": "system_config_change",
+        "user_id": "admin456",
+        "action": "modify_config",
+        "outcome": "SUCCESS",
+        "risk_score": 80,
+        "compliance_level": "standard"
+      }
+    ],
+    "log_integrity": {
+      "is_valid": true,
+      "total_logs": 20,
+      "issues": []
+    },
+    "event_statistics": {
+      "total_events": 20,
+      "unique_users": 3,
+      "event_types": 3,
+      "time_range": {
+        "earliest": "2025-10-31T17:52:55.634743",
+        "latest": "2025-10-31T17:54:23.620070"
+      }
+    }
+  }
+}

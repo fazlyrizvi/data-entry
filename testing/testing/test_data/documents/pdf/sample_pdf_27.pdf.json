@@ -1,0 +1,14 @@
+{
+  "id": 27,
+  "type": "pdf",
+  "filename": "sample_pdf_27.pdf",
+  "size": 122390,
+  "pages": 4,
+  "has_images": false,
+  "text_density": "low",
+  "quality": "low",
+  "language": "en",
+  "complexity": "medium",
+  "created_at": "2025-03-17T19:36:15.815107",
+  "actual_file": "testing/test_data/documents/pdf/sample_pdf_27.pdf"
+}

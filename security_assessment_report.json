@@ -1,0 +1,66 @@
+{
+  "assessment_info": {
+    "timestamp": "2025-10-31T11:54:00.106108",
+    "duration_seconds": 0.31806302070617676,
+    "total_tests": 3,
+    "passed_tests": 1,
+    "failed_tests": 0,
+    "vulnerabilities_found": 0
+  },
+  "vulnerability_summary": [
+    {
+      "category": "vulnerability_counts",
+      "count": 0,
+      "severity": "overall",
+      "types": []
+    },
+    {
+      "category": "severity_breakdown",
+      "count": 0,
+      "severity": "critical",
+      "types": []
+    },
+    {
+      "category": "severity_breakdown",
+      "count": 0,
+      "severity": "high",
+      "types": []
+    },
+    {
+      "category": "severity_breakdown",
+      "count": 0,
+      "severity": "medium",
+      "types": []
+    },
+    {
+      "category": "severity_breakdown",
+      "count": 0,
+      "severity": "low",
+      "types": []
+    }
+  ],
+  "vulnerabilities": [],
+  "test_results": {
+    "total_tests": 3,
+    "passed": 1,
+    "failed": 0,
+    "success_rate": 33.33333333333333
+  },
+  "remediation_plan": {
+    "immediate_actions": [
+      "Fix any syntax errors in test files",
+      "Address critical and high severity vulnerabilities",
+      "Review file permissions on critical files"
+    ],
+    "short_term_actions": [
+      "Implement proper dependency scanning",
+      "Add comprehensive input validation",
+      "Enhance logging and monitoring"
+    ],
+    "long_term_actions": [
+      "Implement automated security testing in CI/CD",
+      "Conduct penetration testing",
+      "Regular security audits and assessments"
+    ]
+  }
+}

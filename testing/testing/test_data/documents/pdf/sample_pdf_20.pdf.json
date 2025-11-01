@@ -1,0 +1,14 @@
+{
+  "id": 20,
+  "type": "pdf",
+  "filename": "sample_pdf_20.pdf",
+  "size": 3349767,
+  "pages": 11,
+  "has_images": true,
+  "text_density": "high",
+  "quality": "low",
+  "language": "en",
+  "complexity": "complex",
+  "created_at": "2025-06-24T19:36:15.760203",
+  "actual_file": "testing/test_data/documents/pdf/sample_pdf_20.pdf"
+}

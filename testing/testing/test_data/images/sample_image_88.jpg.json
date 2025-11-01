@@ -1,0 +1,16 @@
+{
+  "id": 88,
+  "type": "image",
+  "filename": "sample_image_88.jpg",
+  "size": 699840,
+  "width": 1920,
+  "height": 1080,
+  "dpi": 300,
+  "quality": "high",
+  "format": "jpg",
+  "has_noise": false,
+  "has_skew": false,
+  "complexity": "simple",
+  "language": "en",
+  "created_at": "2025-10-31T19:36:16.808303"
+}

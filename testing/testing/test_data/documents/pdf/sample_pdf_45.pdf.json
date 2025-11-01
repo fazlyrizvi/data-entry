@@ -1,0 +1,14 @@
+{
+  "id": 45,
+  "type": "pdf",
+  "filename": "sample_pdf_45.pdf",
+  "size": 5759893,
+  "pages": 20,
+  "has_images": true,
+  "text_density": "high",
+  "quality": "low",
+  "language": "en",
+  "complexity": "complex",
+  "created_at": "2025-08-09T19:36:15.951415",
+  "actual_file": "testing/test_data/documents/pdf/sample_pdf_45.pdf"
+}

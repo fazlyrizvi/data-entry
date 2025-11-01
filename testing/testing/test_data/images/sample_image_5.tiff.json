@@ -1,0 +1,16 @@
+{
+  "id": 5,
+  "type": "image",
+  "filename": "sample_image_5.tiff",
+  "size": 57600,
+  "width": 640,
+  "height": 480,
+  "dpi": 72,
+  "quality": "low",
+  "format": "png",
+  "has_noise": true,
+  "has_skew": true,
+  "complexity": "simple",
+  "language": "en",
+  "created_at": "2025-10-31T19:36:16.234325"
+}

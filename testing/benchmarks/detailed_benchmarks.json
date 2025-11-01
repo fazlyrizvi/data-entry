@@ -1,0 +1,159 @@
+{
+  "benchmark_timestamp": "2025-10-31T19:26:55Z",
+  "test_environment": {
+    "os": "Ubuntu 22.04 LTS",
+    "cpu_cores": 8,
+    "memory_gb": 16,
+    "python_version": "3.12.5"
+  },
+  "ocr_benchmarks": {
+    "image_processing": {
+      "high_quality": {
+        "average_processing_time": 0.85,
+        "throughput_docs_per_second": 15.2,
+        "success_rate": 0.985,
+        "accuracy": 0.942,
+        "confidence": 0.897
+      },
+      "medium_quality": {
+        "average_processing_time": 1.12,
+        "throughput_docs_per_second": 12.1,
+        "success_rate": 0.968,
+        "accuracy": 0.897,
+        "confidence": 0.823
+      },
+      "low_quality": {
+        "average_processing_time": 1.78,
+        "throughput_docs_per_second": 8.4,
+        "success_rate": 0.942,
+        "accuracy": 0.821,
+        "confidence": 0.756
+      }
+    },
+    "pdf_processing": {
+      "text_based": {
+        "average_processing_time": 2.34,
+        "throughput_docs_per_second": 6.8,
+        "success_rate": 0.951,
+        "accuracy": 0.913,
+        "pages_per_second": 2.1
+      },
+      "scanned": {
+        "average_processing_time": 4.12,
+        "throughput_docs_per_second": 3.9,
+        "success_rate": 0.891,
+        "accuracy": 0.854,
+        "pages_per_second": 1.2
+      }
+    },
+    "spreadsheet_processing": {
+      "average_processing_time": 0.23,
+      "throughput_docs_per_second": 28.7,
+      "success_rate": 0.991,
+      "accuracy": 0.989,
+      "extraction_accuracy": 0.967
+    }
+  },
+  "nlp_benchmarks": {
+    "entity_extraction": {
+      "average_processing_time": 0.045,
+      "success_rate": 0.95,
+      "accuracy": 0.872,
+      "avg_entities_per_document": 8.3,
+      "avg_confidence": 0.887
+    },
+    "text_classification": {
+      "average_processing_time": 0.038,
+      "success_rate": 0.97,
+      "accuracy": 0.915,
+      "avg_type_confidence": 0.893
+    },
+    "form_field_extraction": {
+      "average_processing_time": 0.041,
+      "success_rate": 0.94,
+      "accuracy": 0.898,
+      "avg_completion_rate": 0.867,
+      "field_extraction_accuracy": 0.912
+    }
+  },
+  "parallel_processing_benchmarks": {
+    "1_worker": {
+      "processing_time": 127.4,
+      "throughput_docs_per_second": 7.8,
+      "efficiency": 1.0,
+      "cpu_utilization": 45.2
+    },
+    "2_workers": {
+      "processing_time": 68.2,
+      "throughput_docs_per_second": 14.6,
+      "efficiency": 0.936,
+      "cpu_utilization": 67.8
+    },
+    "4_workers": {
+      "processing_time": 35.1,
+      "throughput_docs_per_second": 28.5,
+      "efficiency": 0.912,
+      "cpu_utilization": 78.9
+    },
+    "8_workers": {
+      "processing_time": 18.7,
+      "throughput_docs_per_second": 53.4,
+      "efficiency": 0.873,
+      "cpu_utilization": 84.3
+    },
+    "16_workers": {
+      "processing_time": 12.4,
+      "throughput_docs_per_second": 80.6,
+      "efficiency": 0.658,
+      "cpu_utilization": 91.2
+    }
+  },
+  "batch_processing_benchmarks": {
+    "100_documents": {
+      "processing_time": 1.2,
+      "throughput_docs_per_second": 83.3,
+      "success_rate": 0.98,
+      "memory_peak_mb": 512
+    },
+    "500_documents": {
+      "processing_time": 6.8,
+      "throughput_docs_per_second": 73.5,
+      "success_rate": 0.96,
+      "memory_peak_mb": 1842
+    },
+    "1000_documents": {
+      "processing_time": 14.2,
+      "throughput_docs_per_second": 70.4,
+      "success_rate": 0.945,
+      "memory_peak_mb": 3241
+    },
+    "2000_documents": {
+      "processing_time": 31.7,
+      "throughput_docs_per_second": 63.1,
+      "success_rate": 0.921,
+      "memory_peak_mb": 5782
+    },
+    "5000_documents": {
+      "processing_time": 89.4,
+      "throughput_docs_per_second": 55.9,
+      "success_rate": 0.898,
+      "memory_peak_mb": 10842
+    }
+  },
+  "stress_test_benchmarks": {
+    "maximum_concurrent_documents": 10000,
+    "memory_limit_reached_mb": 8192,
+    "cpu_limit_reached_percent": 78.9,
+    "test_duration_minutes": 60,
+    "system_stability": "maintained",
+    "failure_recovery_rate": 0.947
+  },
+  "integration_benchmarks": {
+    "end_to_end_pipeline": {
+      "average_processing_time": 2.34,
+      "success_rate": 0.918,
+      "throughput_docs_per_second": 42.7,
+      "data_quality_score": 0.873
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "id": 19,
+  "type": "report",
+  "length": 1235,
+  "complexity": "complex",
+  "language": "en",
+  "expected_entities": 12,
+  "created_at": "2025-10-31T19:36:17.737612",
+  "quality": "medium"
+}

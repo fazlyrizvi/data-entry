@@ -1,0 +1,141 @@
+{
+  "test_suite": "Parallel Processing System",
+  "start_time": "2025-10-31T19:35:29.400520",
+  "tests": [
+    {
+      "test_name": "Component Imports",
+      "status": "FAILED",
+      "message": "Component import failed: No module named 'psutil'",
+      "duration": 0.04986691474914551,
+      "timestamp": "2025-10-31T19:35:29.450447",
+      "details": {
+        "error": "No module named 'psutil'"
+      }
+    },
+    {
+      "test_name": "Queue Handler Basic",
+      "status": "FAILED",
+      "message": "Queue handler basic test failed: No module named 'redis'",
+      "duration": 0.020427942276000977,
+      "timestamp": "2025-10-31T19:35:29.471134",
+      "details": {
+        "error": "No module named 'redis'"
+      }
+    },
+    {
+      "test_name": "Worker Manager Basic",
+      "status": "FAILED",
+      "message": "Worker manager basic test failed: No module named 'psutil'",
+      "duration": 0.0037331581115722656,
+      "timestamp": "2025-10-31T19:35:29.475096",
+      "details": {
+        "error": "No module named 'psutil'"
+      }
+    },
+    {
+      "test_name": "Job Processing Workflow",
+      "status": "FAILED",
+      "message": "Job processing workflow failed: No module named 'redis'",
+      "duration": 0.003155231475830078,
+      "timestamp": "2025-10-31T19:35:29.478416",
+      "details": {
+        "error": "No module named 'redis'"
+      }
+    },
+    {
+      "test_name": "Parallel Processing Capabilities",
+      "status": "FAILED",
+      "message": "Parallel processing test failed: No module named 'psutil'",
+      "duration": 0.0014052391052246094,
+      "timestamp": "2025-10-31T19:35:29.479958",
+      "details": {
+        "error": "No module named 'psutil'"
+      }
+    },
+    {
+      "test_name": "System Health Monitoring",
+      "status": "FAILED",
+      "message": "System health monitoring failed: No module named 'redis'",
+      "duration": 0.0015063285827636719,
+      "timestamp": "2025-10-31T19:35:29.481585",
+      "details": {
+        "error": "No module named 'redis'"
+      }
+    },
+    {
+      "test_name": "Error Handling and Recovery",
+      "status": "FAILED",
+      "message": "Error handling test failed: No module named 'psutil'",
+      "duration": 0.0008647441864013672,
+      "timestamp": "2025-10-31T19:35:29.482583",
+      "details": {
+        "error": "No module named 'psutil'"
+      }
+    },
+    {
+      "test_name": "Performance Benchmark",
+      "status": "FAILED",
+      "message": "Performance benchmark failed: No module named 'psutil'",
+      "duration": 0.0008351802825927734,
+      "timestamp": "2025-10-31T19:35:29.483541",
+      "details": {
+        "error": "No module named 'psutil'"
+      }
+    },
+    {
+      "test_name": "Configuration Management",
+      "status": "FAILED",
+      "message": "Configuration management failed: type object 'ProcessingConfig' has no attribute 'from_dict'",
+      "duration": 0.00014328956604003906,
+      "timestamp": "2025-10-31T19:35:29.483789",
+      "details": {
+        "error": "type object 'ProcessingConfig' has no attribute 'from_dict'"
+      }
+    }
+  ],
+  "summary": {
+    "total": 9,
+    "passed": 0,
+    "failed": 9,
+    "errors": [
+      {
+        "test": "Component Imports",
+        "error": "Component import failed: No module named 'psutil'"
+      },
+      {
+        "test": "Queue Handler Basic",
+        "error": "Queue handler basic test failed: No module named 'redis'"
+      },
+      {
+        "test": "Worker Manager Basic",
+        "error": "Worker manager basic test failed: No module named 'psutil'"
+      },
+      {
+        "test": "Job Processing Workflow",
+        "error": "Job processing workflow failed: No module named 'redis'"
+      },
+      {
+        "test": "Parallel Processing Capabilities",
+        "error": "Parallel processing test failed: No module named 'psutil'"
+      },
+      {
+        "test": "System Health Monitoring",
+        "error": "System health monitoring failed: No module named 'redis'"
+      },
+      {
+        "test": "Error Handling and Recovery",
+        "error": "Error handling test failed: No module named 'psutil'"
+      },
+      {
+        "test": "Performance Benchmark",
+        "error": "Performance benchmark failed: No module named 'psutil'"
+      },
+      {
+        "test": "Configuration Management",
+        "error": "Configuration management failed: type object 'ProcessingConfig' has no attribute 'from_dict'"
+      }
+    ]
+  },
+  "end_time": "2025-10-31T19:35:29.483849",
+  "duration": 0.083329
+}

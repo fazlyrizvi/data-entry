@@ -1,0 +1,18 @@
+{
+  "key_id": "provisioning_1761909835_+Pt+yhEE8Gs=_v1",
+  "key_type": "provisioning",
+  "key_value": "eBnjClHf2ZYv84duI6SSNN4Nxgp0V4ypiYWoKkeQdfg=",
+  "scope": "full",
+  "algorithm": "provisioning",
+  "key_length": 256,
+  "created_at": 1761909835.272014,
+  "expires_at": 1793445835.271989,
+  "metadata": {
+    "generator_version": "1.0",
+    "hsm_enabled": false,
+    "entropy_source": "system",
+    "environment": "production",
+    "purpose": "service_provisioning",
+    "owner": "devops_team"
+  }
+}

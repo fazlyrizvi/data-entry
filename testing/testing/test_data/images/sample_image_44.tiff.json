@@ -1,0 +1,16 @@
+{
+  "id": 44,
+  "type": "image",
+  "filename": "sample_image_44.tiff",
+  "size": 57600,
+  "width": 640,
+  "height": 480,
+  "dpi": 72,
+  "quality": "low",
+  "format": "jpg",
+  "has_noise": true,
+  "has_skew": true,
+  "complexity": "complex",
+  "language": "en",
+  "created_at": "2025-10-31T19:36:16.493180"
+}

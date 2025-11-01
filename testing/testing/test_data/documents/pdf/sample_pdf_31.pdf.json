@@ -1,0 +1,14 @@
+{
+  "id": 31,
+  "type": "pdf",
+  "filename": "sample_pdf_31.pdf",
+  "size": 85748,
+  "pages": 1,
+  "has_images": true,
+  "text_density": "low",
+  "quality": "high",
+  "language": "en",
+  "complexity": "complex",
+  "created_at": "2024-11-09T19:36:15.844229",
+  "actual_file": "testing/test_data/documents/pdf/sample_pdf_31.pdf"
+}

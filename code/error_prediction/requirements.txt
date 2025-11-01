@@ -1,0 +1,48 @@
+# Error Prediction and Notification System Dependencies
+
+# Core ML and Data Processing
+numpy>=1.21.0
+pandas>=1.3.0
+scikit-learn>=1.0.0
+joblib>=1.1.0
+
+# HTTP and Networking
+requests>=2.26.0
+urllib3>=1.26.0
+
+# Email Support
+secure-smtplib>=0.1.1
+
+# Async Support
+asyncio-throttle>=1.0.2
+
+# Monitoring and Logging
+psutil>=5.8.0
+
+# Development and Testing (optional)
+pytest>=6.2.0
+pytest-asyncio>=0.18.0
+pytest-cov>=3.0.0
+
+# Production Dependencies
+gunicorn>=20.1.0  # For production deployment
+prometheus-client>=0.13.0  # For metrics collection
+
+# Optional: For advanced ML features
+xgboost>=1.5.0
+lightgbm>=3.3.0
+
+# Optional: For data visualization
+matplotlib>=3.5.0
+seaborn>=0.11.0
+
+# Optional: For database integration
+psycopg2-binary>=2.9.0
+SQLAlchemy>=1.4.0
+
+# Optional: For Redis integration (caching)
+redis>=4.0.0
+
+# Optional: For message queuing
+celery>=5.2.0
+kombu>=5.2.0

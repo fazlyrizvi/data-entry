@@ -1,0 +1,14 @@
+{
+  "id": 34,
+  "type": "pdf",
+  "filename": "sample_pdf_34.pdf",
+  "size": 578262,
+  "pages": 10,
+  "has_images": false,
+  "text_density": "low",
+  "quality": "medium",
+  "language": "en",
+  "complexity": "simple",
+  "created_at": "2025-04-28T19:36:15.878925",
+  "actual_file": "testing/test_data/documents/pdf/sample_pdf_34.pdf"
+}
