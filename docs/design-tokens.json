@@ -35,7 +35,10 @@
   "typography": {
     "fontFamily": {
       "primary": { "value": "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif", "type": "fontFamily" },
+<<<<<<< HEAD
       "swiss": { "value": "'Helvetica Neue', 'Arial', sans-serif", "type": "fontFamily" },
+=======
+>>>>>>> 2a7bfaf2bdc4a4cb016cc420a3663eea37ba32de
       "mono": { "value": "'JetBrains Mono', 'Consolas', 'Monaco', monospace", "type": "fontFamily" }
     },
     "fontSize": {
@@ -48,10 +51,14 @@
       "large": { "value": "20px", "type": "dimension" },
       "body": { "value": "16px", "type": "dimension" },
       "small": { "value": "14px", "type": "dimension" },
+<<<<<<< HEAD
       "caption": { "value": "12px", "type": "dimension" },
       "dataHeader": { "value": "14px", "type": "dimension" },
       "dataCell": { "value": "14px", "type": "dimension" },
       "dataMono": { "value": "13px", "type": "dimension" }
+=======
+      "caption": { "value": "12px", "type": "dimension" }
+>>>>>>> 2a7bfaf2bdc4a4cb016cc420a3663eea37ba32de
     },
     "fontWeight": {
       "regular": { "value": "400", "type": "number" },
@@ -82,6 +89,7 @@
     "3xl": { "value": "96px", "type": "dimension" },
     "4xl": { "value": "128px", "type": "dimension" }
   },
+<<<<<<< HEAD
   "grid": {
     "baseUnit": { "value": "8px", "type": "dimension" },
     "columnWidth": { "value": "64px", "type": "dimension" },
@@ -97,6 +105,9 @@
     "none": { "value": "0px", "type": "dimension" },
     "sharp": { "value": "2px", "type": "dimension" },
     "minimal": { "value": "4px", "type": "dimension" },
+=======
+  "borderRadius": {
+>>>>>>> 2a7bfaf2bdc4a4cb016cc420a3663eea37ba32de
     "sm": { "value": "8px", "type": "dimension" },
     "md": { "value": "12px", "type": "dimension" },
     "lg": { "value": "16px", "type": "dimension" },

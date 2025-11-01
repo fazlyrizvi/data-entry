@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 Website deployed to online address: https://bvqelcah98pc.space.minimax.io
+=======
+Website deployed to online address: https://k8hq67pyshel.space.minimax.io
+>>>>>>> 2a7bfaf2bdc4a4cb016cc420a3663eea37ba32de

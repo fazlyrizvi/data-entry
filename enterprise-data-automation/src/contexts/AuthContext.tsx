@@ -26,21 +26,34 @@ export const useAuth = () => {
   return context
 }
 
+<<<<<<< HEAD
 // Public user for anonymous access
 const publicUser: User = {
   id: 'public-user',
   email: 'public@enterprise.com',
   full_name: 'Public User',
+=======
+// Mock user data for demo purposes
+const mockUser: User = {
+  id: '1',
+  email: 'admin@enterprise.com',
+  full_name: 'John Admin',
+>>>>>>> 2a7bfaf2bdc4a4cb016cc420a3663eea37ba32de
   role: 'admin',
   avatar_url: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face'
 }
 
 export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
+<<<<<<< HEAD
   const [user, setUser] = useState<User | null>(publicUser) // Default to public user
+=======
+  const [user, setUser] = useState<User | null>(mockUser)
+>>>>>>> 2a7bfaf2bdc4a4cb016cc420a3663eea37ba32de
   const [loading, setLoading] = useState(false)
 
   const signIn = async (email: string, password: string) => {
     setLoading(true)
+<<<<<<< HEAD
     // For public access, just simulate login
     setTimeout(() => {
       setUser(publicUser)
@@ -51,6 +64,17 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   const signOut = () => {
     // Keep public user for seamless access
     setUser(publicUser)
+=======
+    // Simulate API call
+    setTimeout(() => {
+      setUser(mockUser)
+      setLoading(false)
+    }, 1000)
+  }
+
+  const signOut = () => {
+    setUser(null)
+>>>>>>> 2a7bfaf2bdc4a4cb016cc420a3663eea37ba32de
   }
 
   const switchRole = (role: User['role']) => {

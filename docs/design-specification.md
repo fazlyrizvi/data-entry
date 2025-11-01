@@ -1,8 +1,16 @@
+<<<<<<< HEAD
 # Enterprise AI Automation Platform - Design Specification
 
 **Design Direction**: Sophisticated Depth with Functional Precision (Three-Way Hybrid)  
 **Version**: 2.0  
 **Updated**: 2025-11-01
+=======
+# Enterprise Data Entry Automation System - Design Specification
+
+**Design Direction**: Hybrid Glassmorphism + Modern Minimalism Premium  
+**Version**: 1.0  
+**Updated**: 2025-10-31
+>>>>>>> 2a7bfaf2bdc4a4cb016cc420a3663eea37ba32de
 
 ---
 
@@ -10,6 +18,7 @@
 
 ### Design Essence
 
+<<<<<<< HEAD
 A unique three-way hybrid combining **Swiss Design's mathematical precision**, **Modern Minimalism's professional restraint**, and **Glassmorphism's contemporary depth**. Creates enterprise credibility through Swiss grid systems and high-contrast typography, maintains professional trust through minimalist color distribution (85% neutral / 12% primary / 3% semantic), while selective glassmorphic effects provide modern sophistication for key interactive elements.
 
 **Visual Character**: Sharp Swiss-influenced grid layouts with mathematical precision, professional minimalist spacing and neutral color dominance, enhanced by strategic frosted glass surfaces for navigation, modals, and interactive states. Functional clarity without sacrificing contemporary visual appeal.
@@ -26,6 +35,17 @@ A unique three-way hybrid combining **Swiss Design's mathematical precision**, *
 - **Minimalism Influence**: Linear project management (minimal color, generous spacing, sharp hierarchy)
 - **Glassmorphism Influence**: Apple macOS Big Sur system preferences (frosted surfaces, clarity)
 - **Hybrid Examples**: Microsoft Azure Portal (glass panels + data precision), Stripe Dashboard (professional restraint + depth)
+=======
+A sophisticated hybrid approach combining frosted glass material design with professional minimalist restraint. Creates enterprise credibility through neutral-dominant color schemes and generous whitespace, while modern glass surfaces provide visual depth for organizing complex data workflows. Balances innovation signal (automation technology) with professional trust (enterprise software).
+
+**Visual Character**: Layered frosted glass cards floating on subtle neutral gradients, sharp typography hierarchy, restrained accent colors, micro-interactions on every element. Professional without being cold, modern without being trendy.
+
+**Real-World References**:
+- Microsoft Azure Portal (glass panels, data organization)
+- Apple macOS Big Sur system preferences (frosted surfaces, clarity)
+- Linear project management (minimal color, generous spacing, sharp hierarchy)
+- Stripe Dashboard (professional restraint, data-first design)
+>>>>>>> 2a7bfaf2bdc4a4cb016cc420a3663eea37ba32de
 
 **Target Users**: Enterprise professionals (25-55) across four roles - Admins need control visibility, Managers need metrics clarity, Operators need workflow efficiency, Viewers need read-only simplicity. Mixed technical literacy requires intuitive patterns over complex interactions.
 
@@ -35,7 +55,11 @@ A unique three-way hybrid combining **Swiss Design's mathematical precision**, *
 
 ### 2.1 Color System
 
+<<<<<<< HEAD
 **Philosophy**: 85% neutral structure, 12% primary brand, 3% semantic status. Swiss-influenced high contrast hierarchy combined with minimalist restraint. Glassmorphic surfaces use carefully controlled transparency (30-50% opacity) with mathematical precision. Professional blue for actions maintains trust while sharp contrast ratios ensure accessibility.
+=======
+**Philosophy**: 90% neutral structure, 10% accent action. Frosted glass surfaces use neutral whites/grays with minimal saturation (<8%). Single professional blue for actions. Semantic colors for status clarity.
+>>>>>>> 2a7bfaf2bdc4a4cb016cc420a3663eea37ba32de
 
 | Token Name | Value | Usage | WCAG Contrast |
 |------------|-------|-------|---------------|
@@ -76,6 +100,7 @@ A unique three-way hybrid combining **Swiss Design's mathematical precision**, *
 
 ### 2.2 Typography
 
+<<<<<<< HEAD
 **Hybrid Approach**: Swiss precision meets modern minimalism. Inter for contemporary readability, Helvetica influences for data-dense areas, with mathematical hierarchy and generous spacing.
 
 | Token | Value | Weight | Line Height | Letter Spacing | Usage | Style Influence |
@@ -106,6 +131,25 @@ A unique three-way hybrid combining **Swiss Design's mathematical precision**, *
 - **Flush Left Alignment**: Primary content aligned to left grid (Swiss tradition)
 - **High Contrast Hierarchy**: Bold weight jumps (400→600→700) for clear information layers
 - **Tight Leading**: 1.1-1.3 line-height for data density, 1.5-1.6 for readability
+=======
+| Token | Value | Weight | Line Height | Letter Spacing | Usage |
+|-------|-------|--------|-------------|----------------|-------|
+| **Font Families** | | | | | |
+| font-primary | 'Inter', -apple-system, sans-serif | - | - | - | All UI text |
+| font-mono | 'JetBrains Mono', 'Consolas', monospace | - | - | - | Data values, codes |
+| **Size Scale** | | | | | |
+| text-hero | 64px | 700 | 1.1 | -0.02em | Dashboard headers |
+| text-title | 48px | 700 | 1.2 | -0.01em | Section titles |
+| text-subtitle | 32px | 600 | 1.3 | 0 | Card headers |
+| text-large | 20px | 400 | 1.6 | 0 | Intro text, key metrics |
+| text-body | 16px | 400 | 1.5 | 0 | Standard UI text |
+| text-small | 14px | 400 | 1.5 | 0 | Helper text, captions |
+| text-caption | 12px | 400 | 1.4 | 0.01em | Metadata, timestamps |
+| **Responsive (Mobile <768px)** | | | | | |
+| text-hero-mobile | 40px | 700 | 1.1 | -0.01em | - |
+| text-title-mobile | 32px | 700 | 1.2 | 0 | - |
+| text-subtitle-mobile | 24px | 600 | 1.3 | 0 | - |
+>>>>>>> 2a7bfaf2bdc4a4cb016cc420a3663eea37ba32de
 
 **Typography on Glass**: Use Medium (500) weight instead of Regular (400) for better contrast on semi-transparent surfaces. Add subtle text-shadow: 0 1px 2px rgba(0,0,0,0.05) for critical text on glass.
 
@@ -124,6 +168,7 @@ A unique three-way hybrid combining **Swiss Design's mathematical precision**, *
 
 **Mobile Adjustments**: Reduce by 30% (<768px): 64px → 40px, 96px → 64px
 
+<<<<<<< HEAD
 ### 2.4 Swiss Design Grid System
 
 **Mathematical Foundation**: All layouts follow strict 8px baseline grid with Swiss-influenced precision. Content areas use mathematical proportions for optimal readability and data organization.
@@ -173,6 +218,19 @@ A unique three-way hybrid combining **Swiss Design's mathematical precision**, *
 - **Glassmorphic Elements**: Can use either based on context (data glass = sharp, interactive glass = curved)
 
 ### 2.6 Shadows & Glass Effects
+=======
+### 2.4 Border Radius
+
+| Token | Value | Usage |
+|-------|-------|-------|
+| radius-sm | 8px | Small elements, badges |
+| radius-md | 12px | Buttons, inputs |
+| radius-lg | 16px | Cards, panels |
+| radius-xl | 24px | Modals, drawers |
+| radius-full | 9999px | Pills, avatars |
+
+### 2.5 Shadows & Glass Effects
+>>>>>>> 2a7bfaf2bdc4a4cb016cc420a3663eea37ba32de
 
 | Token | Effect | Usage |
 |-------|--------|-------|
@@ -186,7 +244,11 @@ A unique three-way hybrid combining **Swiss Design's mathematical precision**, *
 | shadow-modal | 0 20px 25px rgba(0,0,0,0.1), 0 10px 10px rgba(0,0,0,0.04) | Modals, drawers |
 | shadow-glass | 0 8px 32px rgba(0,0,0,0.08) | Glass panels |
 
+<<<<<<< HEAD
 ### 2.7 Animation
+=======
+### 2.6 Animation
+>>>>>>> 2a7bfaf2bdc4a4cb016cc420a3663eea37ba32de
 
 | Token | Value | Easing | Usage |
 |-------|-------|--------|-------|

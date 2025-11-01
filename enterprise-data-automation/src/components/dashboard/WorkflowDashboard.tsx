@@ -18,17 +18,24 @@ interface DashboardStats {
   totalJobs: number
   activeJobs: number
   completedToday: number
+<<<<<<< HEAD
   completedJobs: number
   failedJobs: number
   systemUptime: number
   errorRate: number
   averageProcessingTime: number
+=======
+  averageProcessingTime: number
+  errorRate: number
+  systemUptime: number
+>>>>>>> 2a7bfaf2bdc4a4cb016cc420a3663eea37ba32de
   queueLength: number
   throughput: number
 }
 
 export const WorkflowDashboard: React.FC = () => {
   const [stats, setStats] = useState<DashboardStats>({
+<<<<<<< HEAD
     totalJobs: 0,
     activeJobs: 0,
     completedToday: 0,
@@ -81,6 +88,17 @@ export const WorkflowDashboard: React.FC = () => {
     const interval = setInterval(loadDashboardData, 30000)
     return () => clearInterval(interval)
   }, [])
+=======
+    totalJobs: 12456,
+    activeJobs: 127,
+    completedToday: 342,
+    averageProcessingTime: 2.4,
+    errorRate: 0.8,
+    systemUptime: 99.9,
+    queueLength: 45,
+    throughput: 94.2
+  })
+>>>>>>> 2a7bfaf2bdc4a4cb016cc420a3663eea37ba32de
 
   // Handler functions for action buttons
   const handleExportReport = () => {
@@ -141,6 +159,7 @@ export const WorkflowDashboard: React.FC = () => {
         if (metrics && systemHealth) {
           // Transform backend data to component format
           setStats({
+<<<<<<< HEAD
             totalJobs: systemHealth.totalJobs || 0,
             activeJobs: systemHealth.activeJobs || 0,
             completedToday: systemHealth.completedJobs || 0,
@@ -156,6 +175,16 @@ export const WorkflowDashboard: React.FC = () => {
             queueLength: 0, // Not available in current backend schema
             throughput: systemHealth.totalJobs > 0 ? 
               ((systemHealth.completedJobs / systemHealth.totalJobs) * 100) : 0
+=======
+            totalJobs: systemHealth.totalJobs || 12456,
+            activeJobs: systemHealth.activeJobs || 127,
+            completedToday: systemHealth.completedJobs || 342,
+            averageProcessingTime: 2.4, // Not available in current backend schema
+            errorRate: parseFloat(systemHealth.errorRate) || 0.8,
+            systemUptime: systemHealth.systemUptime || 99.9,
+            queueLength: 45, // Not available in current backend schema
+            throughput: 94.2 // Not available in current backend schema
+>>>>>>> 2a7bfaf2bdc4a4cb016cc420a3663eea37ba32de
           })
         }
       } catch (error) {

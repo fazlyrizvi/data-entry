@@ -12,10 +12,14 @@ import {
   Bell,
   User,
   Menu,
+<<<<<<< HEAD
   X,
   Brain,
   Zap,
   Globe
+=======
+  X
+>>>>>>> 2a7bfaf2bdc4a4cb016cc420a3663eea37ba32de
 } from 'lucide-react'
 import { useAuth } from '../contexts/AuthContext'
 import { cn } from '../lib/utils'
@@ -59,6 +63,7 @@ const navigationItems: NavigationItem[] = [
     roles: ['admin', 'manager', 'operator', 'viewer']
   },
   {
+<<<<<<< HEAD
     name: 'AI Analysis',
     href: '/ai-analysis',
     icon: Brain,
@@ -77,6 +82,8 @@ const navigationItems: NavigationItem[] = [
     roles: ['admin', 'manager', 'analyst']
   },
   {
+=======
+>>>>>>> 2a7bfaf2bdc4a4cb016cc420a3663eea37ba32de
     name: 'Access Control',
     href: '/access',
     icon: Users,
@@ -89,8 +96,14 @@ export const Navigation: React.FC = () => {
   const location = useLocation()
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
+<<<<<<< HEAD
   // Show all navigation items for public access
   const filteredNavItems = navigationItems
+=======
+  const filteredNavItems = navigationItems.filter(item => 
+    user && item.roles.includes(user.role)
+  )
+>>>>>>> 2a7bfaf2bdc4a4cb016cc420a3663eea37ba32de
 
   return (
     <nav className="sticky top-0 z-50 border-b border-neutral-200 bg-glass-light backdrop-blur-glass supports-[backdrop-filter]:bg-glass-light/40">
