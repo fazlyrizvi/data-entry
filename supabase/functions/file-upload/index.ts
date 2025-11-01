@@ -33,10 +33,26 @@ Deno.serve(async (req) => {
       throw new Error('File size exceeds 10MB limit');
     }
 
-    // Validate file type
-    const allowedTypes = ['application/pdf', 'text/csv', 'text/plain', 'application/json'];
-    if (!allowedTypes.includes(fileType)) {
-      throw new Error('File type not supported');
+    // Validate file type - handle data URLs
+    let cleanFileType = fileType;
+    if (fileType.startsWith('data:')) {
+      // Extract mime type from data URL (e.g., "data:text/csv;base64,..." -> "text/csv")
+      const match = fileType.match(/data:([^;,]+)/);
+      cleanFileType = match ? match[1] : fileType;
+    }
+    
+    const allowedTypes = [
+      'application/pdf', 
+      'text/csv', 
+      'text/plain', 
+      'application/json',
+      'text/json',
+      'application/x-csv',
+      'text/x-csv'
+    ];
+    
+    if (!allowedTypes.includes(cleanFileType)) {
+      throw new Error(`File type not supported: ${fileType}. Allowed types: ${allowedTypes.join(', ')}`);
     }
 
     // Convert base64 to blob
@@ -55,7 +71,7 @@ Deno.serve(async (req) => {
         method: 'POST',
         headers: {
           'Authorization': `Bearer ${SUPABASE_SERVICE_ROLE_KEY}`,
-          'Content-Type': fileType,
+          'Content-Type': cleanFileType,
         },
         body: binaryData,
       }
@@ -83,7 +99,7 @@ Deno.serve(async (req) => {
         original_filename: filename,
         file_path: storagePath,
         file_size: fileSize,
-        file_type: fileType,
+        file_type: cleanFileType,
         storage_bucket: 'uploaded-files',
         storage_url: storageUrl,
         uploaded_by: userId,
@@ -91,6 +107,7 @@ Deno.serve(async (req) => {
         processing_status: 'pending',
         metadata: {
           original_name: filename,
+          original_mime_type: fileType,
           uploaded_at: new Date().toISOString(),
         },
       }),
@@ -110,7 +127,7 @@ Deno.serve(async (req) => {
           fileId: fileRecord[0].id,
           filename: storagePath,
           storageUrl,
-          fileType,
+          fileType: cleanFileType,
           fileSize,
           uploadStatus: 'uploaded',
           processingStatus: 'pending',

@@ -38,7 +38,7 @@ Deno.serve(async (req) => {
     };
 
     // Add optional configurations
-    bucketConfig.allowed_mime_types = ["application/pdf", "text/csv", "text/plain", "application/json"];
+    bucketConfig.allowed_mime_types = ["application/pdf", "text/csv", "text/plain", "application/json", "text/json", "application/x-csv", "text/x-csv"];
     bucketConfig.file_size_limit = 10485760;
 
     // Create bucket using Storage API
@@ -111,7 +111,7 @@ Deno.serve(async (req) => {
         bucket: {
         name: 'uploaded-files',
         public: true,
-        allowed_mime_types: ["application/pdf", "text/csv", "text/plain", "application/json"],
+        allowed_mime_types: ["application/pdf", "text/csv", "text/plain", "application/json", "text/json", "application/x-csv", "text/x-csv"],
         file_size_limit: 10485760,
         policies: policyResults
         }
